@@ -1,5 +1,5 @@
 // Config default
-config = (config) ? config : {
+var config = (customConfig) ? customConfig : {
   env: 'production',
   apiURL: 'http://coworking.ldaniel.eu/api/',
   googleMapsAPIKey: 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
