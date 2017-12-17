@@ -112,7 +112,7 @@ var SpacesIndex = Vue.component('spaces-index', {
   mounted() {
     
     // request space data
-    axios.get(this.$root.apiURL + 'api/spaces').then(
+    axios.get(this.$root.apiURL + 'api/' + this.$root.location).then(
       response => this.spaces = response.data.response
     );
 
@@ -133,7 +133,7 @@ var SpacesIndex = Vue.component('spaces-index', {
     },
 
     clickOnMap(id) {
-      router.push({ path: '/space/' + id })
+      router.push({ path: '/' + this.$root.location + '/' + id })
     },
 
     setWorkspaceFilter(id) {

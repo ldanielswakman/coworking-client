@@ -121,7 +121,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
   mounted() {
 
     // request space data
-    axios.get(this.$root.apiURL + 'api/spaces/' + this.id).then(
+    axios.get(this.$root.apiURL + 'api/' + this.$root.location + '/' + this.id).then(
       response => {
         this.space = response.data.response;
         this.googlePlaceID = response.data.response.google_place_id;
