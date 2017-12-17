@@ -1,7 +1,7 @@
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {
   load: {
-    key: googleMapsAPIKey
+    key: config.googleMapsAPIKey
   }
 });
 
