@@ -1,7 +1,3 @@
-// Config
-const googleMapsAPIKey = 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0'
-
-
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {
   load: {
@@ -39,7 +35,8 @@ var app = new Vue({
   el: '#app',
   router: router,
   data: {
-    googleMapsAPIKey: googleMapsAPIKey,
+    googleMapsAPIKey: config.googleMapsAPIKey,
+    apiURL: config.apiURL,
     visibleTypes: [
       { id: 0, name: 'All' },
       { id: 1, name: 'Business Center' },

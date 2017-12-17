@@ -500,7 +500,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
   mounted() {
 
     // request space data
-    axios.get('api/spaces/' + this.id).then(
+    axios.get(this.$root.apiURL + 'api/spaces/' + this.id).then(
       response => {
         this.space = response.data.response;
         this.googlePlaceID = response.data.response.google_place_id;
@@ -527,7 +527,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
       APIKey = this.$root.googleMapsAPIKey;
       PlaceDetailsURL = baseURL + '?placeid=' + placeID + '&key=' + APIKey;
 
-      axios.get('api/cors/?url=' + encodeURIComponent(PlaceDetailsURL)).then(
+      axios.get(this.$root.apiURL + 'api/cors/?url=' + encodeURIComponent(PlaceDetailsURL)).then(
         place_response => this.googlePlace = place_response.data.response.result
       );
 
@@ -648,9 +648,9 @@ var SpacesIndex = Vue.component('spaces-index', {
   },
 
   mounted() {
-
+    
     // request space data
-    axios.get('api/spaces').then(
+    axios.get(this.$root.apiURL + 'api/spaces').then(
       response => this.spaces = response.data.response
     );
 
@@ -683,10 +683,6 @@ var SpacesIndex = Vue.component('spaces-index', {
     }
   }
 });
-
-// Config
-const googleMapsAPIKey = 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0'
-
 
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {
@@ -725,7 +721,8 @@ var app = new Vue({
   el: '#app',
   router: router,
   data: {
-    googleMapsAPIKey: googleMapsAPIKey,
+    googleMapsAPIKey: config.googleMapsAPIKey,
+    apiURL: config.apiURL,
     visibleTypes: [
       { id: 0, name: 'All' },
       { id: 1, name: 'Business Center' },
