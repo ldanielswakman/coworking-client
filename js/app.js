@@ -1,3 +1,10 @@
+// Config default
+config = (config) ? config : {
+  env: 'production',
+  apiURL: 'http://coworking.ldaniel.eu/api/',
+  googleMapsAPIKey: 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
+}
+
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {
   load: {
