@@ -1,0 +1,38 @@
+.tooltip {
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	display: inline-block;
+	margin-bottom: 0.25rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.25rem;
+	background-color: rgba($darkblue, 0.9);
+	color: $white;
+	line-height: 1rem;
+
+	white-space: nowrap;
+	pointer-events: none;
+
+	opacity: 0;
+	@include prefix(transform, translateY(1rem));
+	@include prefix(transition, all 0.3s ease-out);
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 0.5rem;
+		border: 0.25rem solid transparent;
+		border-top-color: rgba($darkblue, 0.9);
+	}
+}
+
+.hasTooltip {
+	position: relative;
+
+	&:hover .tooltip {
+		opacity: 1;
+		@include prefix(transform, translateY(0));
+	}
+}
+

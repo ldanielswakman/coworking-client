@@ -1,0 +1,139 @@
+.price-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+
+
+  @include tabletAndDown() {
+    bottom: 5rem;
+    padding: 1rem;
+    justify-content: flex-start;
+    max-height: 0;
+    @include prefix(transform, translateY(100vh));
+    @include prefix(transition, all 0.3s ease);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &:before {
+      content: "";
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 5rem;
+      width: 200vw;
+      opacity: 0;
+      pointer-events: none;
+      @include prefix(transition, all 0.3s ease);
+      @include vertical-gradient(rgba($darkblue, 0), rgba($darkblue, 0.2));
+    }
+  }
+
+  ul {
+    position: relative;
+    display: flex;
+    width: auto;
+    flex-basis: 33%;
+    padding: 0.5rem 2rem;
+    @include prefix(border-radius, 0.5rem);
+    background-color: $greylighter;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 0.5rem 0;
+      opacity: 0.3;
+      line-height: 1rem;
+      cursor: pointer;
+
+      &:hover { opacity: 0.5; }
+
+      .icon {
+        width: 2rem;
+      }
+
+      .name {
+        display: block;
+        opacity: 0.5;
+        font-size: 0.875rem;
+        white-space: nowrap;
+      }
+
+      .price-label { display: none; }
+
+      &.isActive {
+        opacity: 1;
+
+        .price-label { display: block; }
+      }
+
+      & + li {
+        margin-left: 5rem;
+      }
+    }
+
+    @include tabletAndUp() {
+      top: -1rem;
+    }
+  }
+
+  &.isExpanded {
+    max-height: 100vh;
+    @include prefix(transform, translateY(0));
+
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+.price-label {
+  position: absolute;
+  top: -20%;
+  left: 3.5rem;
+  z-index: 2;
+  display: inline-block;
+  padding: 0.25rem;
+  background-color: $yellow;
+  border: 3px dotted $yellow;
+  @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
+  line-height: 1em;
+  @include prefix(border-radius, 0.25rem);
+  @include transform(rotate(-10deg));
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0.125rem;
+    right: calc(100% - 1rem);
+    height: 1.9rem;
+    width: 1.9rem;
+    @include prefix(border-radius, 0.25rem);
+    background-color: $yellow;
+    @include prefix(transform, rotate(-45deg));
+    @include prefix(clip-path, polygon(0% 0%, 100% 0, 0 100%));
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: -0.25rem;
+    margin-right: 0.25rem;
+    @include prefix(border-radius, 0.25rem);
+    background-color: $greylighter;
+    @include prefix(box-shadow, inset 0 0 1rem rgba($black, 0.1));
+  }
+  span { font-size: 0.75rem; white-space: nowrap; }
+}
+

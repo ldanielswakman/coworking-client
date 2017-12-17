@@ -1,0 +1,50 @@
+// Colours
+$darkblue:     #30376b;
+$yellow:       #fbe370;
+$yellowdark:   #ead16a;
+$yellowfaded:  lighten(desaturate($yellow, 50%), 15%);
+$fadedred:     #e18e87;
+$themeblue:    #6776E6;
+
+$greyblue:     desaturate(lighten($darkblue, 20%), 20%) !important;
+
+$white:        #FFFFFF;
+$greylightest: #F5F5F7;
+$greylighter:  #E4E5ED;
+$greylight:    #CED1E0;
+$black:        #000000;
+
+.bg-white {
+  background-color: $white !important;
+}
+.bg-greylighter {
+  background-color: $greylighter !important;
+}
+.bg-greylightest {
+  background-color: $greylightest !important;
+}
+.bg-imagecover {
+  background-position: center center;
+  background-size: cover !important;
+}
+.bg-themeblue {
+  background-color: $themeblue !important;
+}
+.c-themeblue {
+  color: $themeblue !important;
+}
+.c-darkblue {
+  color: $darkblue !important;
+}
+.c-greylight {
+  color: $greylight !important;
+}
+.c-greyblue {
+  color: $greyblue;
+}
+.c-light {
+  color: desaturate(lighten($darkblue, 40%), 40%) !important;
+}
+.c-white {
+  color: $white !important;
+}

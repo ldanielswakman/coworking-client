@@ -1,0 +1,82 @@
+#app {
+  display: flex;
+
+  .isLoading {
+    opacity: 0.5;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    // List
+    .spaces-index {
+      padding: 0 0.5rem 1rem;
+      flex-grow: 1;
+      flex-basis: 80vw;
+
+      @include tabletAndUp() {
+        flex-direction: row;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        padding: 0 2rem 1rem;
+      }
+    }
+    .spaces-index {
+      padding-bottom: 3rem;
+    }
+    .spaces-toolbar {
+      display: flex;
+    }
+    .spaces-toolbar__search {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    @include tabletAndDown() {
+      .spaces-toolbar__search {
+        margin-left: 0;
+      }
+      .spaces-toolbar__type select {
+        display: none;
+        // max-width: calc(100vw - 10.5rem);
+        // margin-right: 0.5rem;
+      }
+    }
+    .spaces-map {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 20%;
+      min-height: 30vh;
+
+      .vue-map-container {
+        flex-grow: 1;
+      }
+    }
+
+    // Detail
+    .space-detail {
+      padding: 0 0 1rem;
+      flex-grow: 1;
+      flex-basis: 80vw;
+
+      @include tabletAndUp() {
+        flex-direction: row;
+        margin-left: 10vw;
+        margin-right: 10vw;
+      }
+    }
+    .space-detail__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      display: inline-block;
+      padding: 1rem;
+      color: $white;
+      font-size: 3rem;
+      line-height: 1rem;
+      @include prefix(text-shadow, 0 0 1rem rgba($black, 0.2));
+    }
+  }
+}

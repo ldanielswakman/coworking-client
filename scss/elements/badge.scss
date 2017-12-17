@@ -1,0 +1,43 @@
+.badge {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+  background: $greylighter;
+  text-align: center;
+  line-height: 1.85rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: $darkblue;
+
+  &.badge--large {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    line-height: 2.85rem;
+    font-size: 1.5rem;
+  }
+  &.badge--xlarge {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+  }
+  &.badge--small {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    line-height: 2.35rem;
+  }
+
+  &.isInactive {
+    background: $greylightest;
+    pointer-events: none;
+
+    img { opacity: 0.25; }
+  }
+}

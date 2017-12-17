@@ -1,0 +1,71 @@
+// Typography
+@font-face {
+  font-family: 'Gordita';
+  src: url('../fonts/gorditaregular-webfont.woff2') format('woff2'),
+       url('../fonts/gorditaregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gordita';
+  src: url('../fonts/gorditamedium-webfont.woff2') format('woff2'),
+       url('../fonts/gorditamedium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gordita';
+  src: url('../fonts/gorditabold-webfont.woff2') format('woff2'),
+       url('../fonts/gorditabold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+// Generic
+body, html {
+  // min-width: 100%;
+  // min-height: 100%;
+
+  font-family: "Gordita", sans serif;
+  font-size: 100%; // 1em = 16px (default)
+  font-kerning: normal;
+  line-height: 2em;
+  
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: $darkblue;
+  background-color: $yellow;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &.link {
+    &:hover {
+      background-color: $yellowdark;
+    }
+  }
+}
+
+figure img {
+  max-width: 100%;
+}
+
+
+
+// Flexboxgrid adjustments
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &.row--nopadding {
+    & > [class*='col-'] {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+}

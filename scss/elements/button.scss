@@ -1,0 +1,69 @@
+// Button
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem 0.5rem;
+  background-color: $yellow;
+  border: 0.125rem solid transparent;
+  @include rounded(1.25rem);
+  color: $darkblue;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  &:focus {
+    outline: none;
+  }
+  &.button--outline {
+    background: none;
+    border-color: $darkblue;
+    color: $darkblue;
+
+    &:hover {
+      background-color: $darkblue;
+      color: $white;
+    }
+  }
+  &.button--circle {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.125rem;
+    border-radius: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+    .close {
+      position: relative;
+      display: inline-block;
+      @include prefix(transform, translateY(-0.25rem));
+    }
+  }
+  &.button--white {
+    background: $white;
+    color: $darkblue;
+  }
+  &.button--dark {
+    background: $darkblue;
+    color: $white;
+  }
+  &.button--theme {
+    background-color: $themeblue;
+    color: $white;
+  }
+  &.button--lightest {
+    background: $greylightest;
+    color: inherit;
+  }
+
+  // Sizes
+  &.button--small {
+    padding: 0.125rem 1rem;
+    line-height: 1.5rem;
+  }
+}

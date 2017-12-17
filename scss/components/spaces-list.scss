@@ -1,0 +1,25 @@
+.spaces-list {
+	position: relative;
+	min-height: 8rem;
+	@include prefix(transition, all 0.3s ease);
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: url('../images/spinner.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0;
+
+		@include prefix(transition, all 0.3s ease);
+	}
+
+	&.isLoading:before {
+		opacity: 1;
+	}
+}
+

@@ -1,0 +1,76 @@
+// Mixins
+
+
+// General prefixing
+@mixin prefix($property, $arguments) {
+  -webkit-#{$property}: $arguments;
+  -moz-#{$property}: $arguments;
+  #{$property}: $arguments;
+}
+
+@mixin transform($properties) {
+  -webkit-transform: $properties;
+  -moz-transform: $properties;
+  transform: $properties;
+}
+
+@mixin transition($properties: all 0.3s ease) {
+  -webkit-transition: $properties;
+  -moz-transition: $properties;
+  transition: $properties;
+}
+
+@mixin rounded($size) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
+
+@mixin animation($properties) {
+  -webkit-animation: $properties;
+  -moz-animation: $properties;
+  -ms-animation: $properties;
+  animation: $properties;
+}
+
+@mixin box-shadow($properties) {
+  -webkit-box-shadow: $properties;
+  -moz-box-shadow: $properties;
+  -ms-box-shadow: $properties;
+  box-shadow: $properties;
+}
+
+@mixin vertical-gradient($start: $dark, $end: $light) {
+  background: -moz-linear-gradient(top, $start 0%, $end 100%); // FF3.6-15
+  background: -webkit-linear-gradient(top, $start 0%, $end 100%); // Chrome10-25,Safari5.1-6
+  background: linear-gradient(to bottom, $start 0%, $end 100%); // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$end',GradientType=0 ); // IE6-9
+}
+
+// Creates more elegant text underlines
+@mixin underline($color, $weight: 2px, $offset: 0px) {
+  background-image: linear-gradient(to top, transparent, transparent $offset, $color $offset, $color ($offset + $weight), transparent ($offset + $weight))
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin tabletAndUp() {
+  @media screen and (min-width: 48em) {
+    @content;
+  }
+}
+
+@mixin tabletAndDown() {
+  @media screen and (max-width: 48em) {
+    @content;
+  }
+}
