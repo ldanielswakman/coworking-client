@@ -9,7 +9,7 @@ var AppNav = Vue.component('app-nav', {
         <router-link to="/" exact class="logo">
 
           <i v-if="indexPage == false" class="ti ti-angle-left"></i>
-          <img v-bind:src="'images/logo-' + $root.location.name + '.svg'" alt="Coworking İstanbul" />
+          <img v-bind:src="'images/logo-' + $root.location.name + '.svg'" v-bind:alt="'Coworking ' + $root.location.displayName" />
 
         </router-link>
 
@@ -267,7 +267,7 @@ Vue.component('splash-dialog', {
   template: `
   <div class="splash-dialog" :class="{ isVisible: isVisible }" @click="isVisible = false">
 
-      <img src="images/logo.svg" alt="Coworking İstanbul" style="height: 3rem;" />
+      <img v-bind:src="'images/logo-' + $root.location.name + '.svg'" v-bind:alt="'Coworking ' + $root.location.displayName" style="height: 3rem;" />
 
       <h3 class="u-mb3 u-mt3"><blockquote v-html="message"></blockquote></h3>
 
@@ -278,8 +278,13 @@ Vue.component('splash-dialog', {
 
   data() {
     return {
-      isVisible: true,
-      message: "Finding a <b>coworking space</b> in <b>İstanbul</b> doesn't have to be hard...",
+      isVisible: true
+    }
+  },
+
+  computed: {
+    message() {
+      return "Finding a <b>coworking space</b> in " + this.$root.location.displayName + " doesn't have to be hard..."
     }
   },
 
@@ -692,10 +697,11 @@ var defaultConfig = {
 	'apiURL': 'https://coworking.ldaniel.eu/',
 
 	'location': {
-		name: 'berlin',
-		lat: 52.5172462,
-		lng: 13.4193396,
-		zoom: 11
+		'name': 'berlin',
+		'displayName': 'Berlin',
+		'lat': 52.5172462,
+		'lng': 13.4193396,
+		'zoom': 11
 	},
 
 	'googleMapsAPIKey': 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',

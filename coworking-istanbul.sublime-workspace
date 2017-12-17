@@ -519,6 +519,40 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "js/views/spaces-index.js",
+			"settings":
+			{
+				"buffer_size": 4818,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 1466,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.js",
+			"settings":
+			{
+				"buffer_size": 233,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/components/spaces-map.js",
+			"settings":
+			{
+				"buffer_size": 3686,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -572,10 +606,19 @@
 	},
 	"expanded_folders":
 	[
-		"/Applications/MAMP/htdocs/coworking-istanbul"
+		"/Applications/MAMP/htdocs/coworking-ist"
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/coworking-api/api/content/berlin/spaces.txt",
+		"/Applications/MAMP/htdocs/coworking-api/api/panel/.tx/config",
+		"/Applications/MAMP/htdocs/coworking-api/api/site/templates/spaces.php",
+		"/Applications/MAMP/htdocs/coworking-api/api/site/templates/space.php",
+		"/Applications/MAMP/htdocs/coworking-api/api/panel/index.php",
+		"/Applications/MAMP/htdocs/coworking-api/index.php",
+		"/Applications/MAMP/htdocs/coworking-api/scripts.php",
+		"/Applications/MAMP/htdocs/coworking-api/head.php",
+		"/Applications/MAMP/htdocs/coworking-api/.gitignore",
 		"/Applications/MAMP/htdocs/coworking-api/api/site/templates/default.php",
 		"/Applications/MAMP/htdocs/coworking-api/api/site/templates/home.php",
 		"/Applications/MAMP/htdocs/coworking-api/api/kirby/branches/default.php",
@@ -694,16 +737,7 @@
 		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/dialog/contact.php",
 		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/dialog/partner.php",
 		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/dialog/submit-content.php",
-		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/head-meta.php",
-		"/Users/Daniel/Desktop/logo.svg",
-		"/Applications/MAMP/htdocs/WebsiteFrontend/adminpanel/images/logo.svg",
-		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/icon/analytics.php",
-		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/icon/ar-glasses-1.php",
-		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/icon/analytics.svg",
-		"/Applications/MAMP/htdocs/WebsiteFrontend/content/1-home/home-old.txt",
-		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/icon/bionic-contact-lens.php",
-		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/icon/laptop.php",
-		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/icon/virtual-reality-3.php"
+		"/Applications/MAMP/htdocs/WebsiteFrontend/site/snippets/head-meta.php"
 	],
 	"find":
 	{
@@ -738,14 +772,134 @@
 	"folders":
 	[
 		{
-			"path": "/Applications/MAMP/htdocs/coworking-istanbul"
+			"path": "/Applications/MAMP/htdocs/coworking-ist"
 		}
 	],
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/views/spaces-index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								348,
+								348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								233,
+								233
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/components/spaces-map.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3385,
+								3425
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -801,6 +955,66 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"confi",
+				"config.js"
+			],
+			[
+				"map",
+				"js/components/spaces-map.js"
+			],
+			[
+				"app",
+				"js/app.js"
+			],
+			[
+				"spacein",
+				"js/views/spaces-index.js"
+			],
+			[
+				"home.php",
+				"api/site/templates/home.php"
+			],
+			[
+				"homey",
+				"api/site/blueprints/home.yml"
+			],
+			[
+				"spaces.ym",
+				"api/site/blueprints/spaces.yml"
+			],
+			[
+				"config",
+				"api/panel/.tx/config"
+			],
+			[
+				"space",
+				"api/site/templates/space.php"
+			],
+			[
+				"tempspaces",
+				"api/site/templates/spaces.php"
+			],
+			[
+				"api",
+				"api/panel/index.php"
+			],
+			[
+				"scrip",
+				"scripts.php"
+			],
+			[
+				"head",
+				"head.php"
+			],
+			[
+				"index.",
+				"index.php"
+			],
+			[
+				"git",
+				".gitignore"
+			],
 			[
 				"tempde",
 				"api/site/templates/default.php"
@@ -900,10 +1114,6 @@
 			[
 				"typo",
 				"WebsiteFrontend/assets/scss/base/_typography.scss"
-			],
-			[
-				"head",
-				"WebsiteFrontend/site/snippets/head.php"
 			],
 			[
 				"imagegri",
@@ -1058,10 +1268,6 @@
 				"WebsiteFrontend/assets/scss/pages/_partners.scss"
 			],
 			[
-				"confi",
-				"WebsiteFrontend/site/config/config.php"
-			],
-			[
 				"media.",
 				"WebsiteFrontend/kirby/vendor/getkirby/toolkit/lib/media.php"
 			],
@@ -1202,10 +1408,6 @@
 				"WebsiteFrontend/site/config/config.php"
 			],
 			[
-				"home.php",
-				"WebsiteFrontend/site/templates/home.php"
-			],
-			[
 				"genform",
 				"WebsiteFrontend/site/snippets/dialog/generic-form.php"
 			],
@@ -1250,10 +1452,6 @@
 				"assets/scss/components/_dialog.scss"
 			],
 			[
-				"config",
-				"site/config/config.php"
-			],
-			[
 				"head.ph",
 				"site/snippets/head.php"
 			],
@@ -1268,50 +1466,6 @@
 			[
 				"header.sc",
 				"assets/scss/components/_header.scss"
-			],
-			[
-				"logo",
-				"adminpanel/images/logo.svg"
-			],
-			[
-				"menu--",
-				"site/snippets/menu--full.php"
-			],
-			[
-				"menu.sc",
-				"assets/scss/elements/_menu.scss"
-			],
-			[
-				"menufu",
-				"site/snippets/menu--full.php"
-			],
-			[
-				"analy",
-				"site/snippets/icon/analytics.svg"
-			],
-			[
-				"icon-gu",
-				"site/templates/icon-guide.php"
-			],
-			[
-				"drop",
-				"site/snippets/dropdown.php"
-			],
-			[
-				"homeol",
-				"content/1-home/home-old.txt"
-			],
-			[
-				"virtua",
-				"site/snippets/icon/virtual-reality-9.php"
-			],
-			[
-				"che",
-				"site/snippets/icon/check.php"
-			],
-			[
-				"widgpages",
-				"panel/app/widgets/pages/pages.php"
 			]
 		],
 		"width": 0.0
@@ -1319,9 +1473,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "cowo",
 		"selected_items":
 		[
+			[
+				"cowo",
+				"/Applications/MAMP/htdocs/coworking-istanbul/coworking-istanbul.sublime-workspace"
+			],
 			[
 				"bala",
 				"/Applications/MAMP/htdocs/balamirnazlica/balamir.sublime-project"

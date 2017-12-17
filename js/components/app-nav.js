@@ -9,7 +9,7 @@ var AppNav = Vue.component('app-nav', {
         <router-link to="/" exact class="logo">
 
           <i v-if="indexPage == false" class="ti ti-angle-left"></i>
-          <img v-bind:src="'images/logo-' + $root.location.name + '.svg'" alt="Coworking İstanbul" />
+          <img v-bind:src="'images/logo-' + $root.location.name + '.svg'" v-bind:alt="'Coworking ' + $root.location.displayName" />
 
         </router-link>
 

@@ -6,10 +6,11 @@ var defaultConfig = {
 	'apiURL': 'https://coworking.ldaniel.eu/',
 
 	'location': {
-		name: 'berlin',
-		lat: 52.5172462,
-		lng: 13.4193396,
-		zoom: 11
+		'name': 'berlin',
+		'displayName': 'Berlin',
+		'lat': 52.5172462,
+		'lng': 13.4193396,
+		'zoom': 11
 	},
 
 	'googleMapsAPIKey': 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
