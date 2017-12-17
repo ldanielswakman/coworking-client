@@ -685,7 +685,7 @@ var SpacesIndex = Vue.component('spaces-index', {
 });
 
 // Config default
-var config = (customConfig) ? customConfig : {
+var config = (typeof customConfig !== 'undefined') ? customConfig : {
   env: 'production',
   apiURL: 'http://coworking.ldaniel.eu/api/',
   googleMapsAPIKey: 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
