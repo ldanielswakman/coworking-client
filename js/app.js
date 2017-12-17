@@ -1,7 +1,7 @@
 // Config default
 var config = (typeof customConfig !== 'undefined') ? customConfig : {
   env: 'production',
-  apiURL: 'https://coworking.ldaniel.eu/api/',
+  apiURL: 'https://coworking.ldaniel.eu/',
   googleMapsAPIKey: 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
 }
 
