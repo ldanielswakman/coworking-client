@@ -9,7 +9,7 @@ var AppNav = Vue.component('app-nav', {
         <router-link to="/" exact class="logo">
 
           <i v-if="indexPage == false" class="ti ti-angle-left"></i>
-          <img src="images/logo.svg" alt="Coworking İstanbul" />
+          <img v-bind:src="'images/logo-' + $root.location.name + '.svg'" alt="Coworking İstanbul" />
 
         </router-link>
 
@@ -247,9 +247,9 @@ Vue.component('spaces-map', {
   data() {
     return {
       defaultLocation: {
-        "lat": 41.06,
-        "lng": 29.0193357,
-        "zoom": 10
+        "lat": this.$root.location.lat,
+        "lng": this.$root.location.lng,
+        "zoom": this.$root.location.zoom
       },
       options: {
         styles: mapStyles,
@@ -650,7 +650,7 @@ var SpacesIndex = Vue.component('spaces-index', {
   mounted() {
     
     // request space data
-    axios.get(this.$root.apiURL + 'api/' + this.$root.location).then(
+    axios.get(this.$root.apiURL + 'api/' + this.$root.location.name).then(
       response => this.spaces = response.data.response
     );
 
@@ -671,7 +671,7 @@ var SpacesIndex = Vue.component('spaces-index', {
     },
 
     clickOnMap(id) {
-      router.push({ path: '/' + this.$root.location + '/' + id })
+      router.push({ path: '/' + this.$root.location.name + '/' + id })
     },
 
     setWorkspaceFilter(id) {
@@ -685,17 +685,25 @@ var SpacesIndex = Vue.component('spaces-index', {
 });
 
 // Config default
-var config = (typeof customConfig !== 'undefined') ? customConfig : {
+var defaultConfig = {
 
-	env: 'production',
+	'env': 'production',
 
-	apiURL: 'https://coworking.ldaniel.eu/',
+	'apiURL': 'https://coworking.ldaniel.eu/',
 
-	location: 'istanbul',
+	'location': {
+		name: 'berlin',
+		lat: 52.5172462,
+		lng: 13.4193396,
+		zoom: 11
+	},
 
-	googleMapsAPIKey: 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
+	'googleMapsAPIKey': 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
 	
-}
+};
+
+config = (typeof customConfig !== 'undefined') ? customConfig : defaultConfig;
+config = defaultConfig;
 
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {

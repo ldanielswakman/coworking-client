@@ -28,9 +28,9 @@ Vue.component('spaces-map', {
   data() {
     return {
       defaultLocation: {
-        "lat": 41.06,
-        "lng": 29.0193357,
-        "zoom": 10
+        "lat": this.$root.location.lat,
+        "lng": this.$root.location.lng,
+        "zoom": this.$root.location.zoom
       },
       options: {
         styles: mapStyles,

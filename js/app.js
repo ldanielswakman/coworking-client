@@ -1,15 +1,23 @@
 // Config default
-var config = (typeof customConfig !== 'undefined') ? customConfig : {
+var defaultConfig = {
 
-	env: 'production',
+	'env': 'production',
 
-	apiURL: 'https://coworking.ldaniel.eu/',
+	'apiURL': 'https://coworking.ldaniel.eu/',
 
-	location: 'istanbul',
+	'location': {
+		name: 'berlin',
+		lat: 52.5172462,
+		lng: 13.4193396,
+		zoom: 11
+	},
 
-	googleMapsAPIKey: 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
+	'googleMapsAPIKey': 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
 	
-}
+};
+
+config = (typeof customConfig !== 'undefined') ? customConfig : defaultConfig;
+config = defaultConfig;
 
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {
