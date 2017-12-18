@@ -3,14 +3,22 @@ var defaultConfig = {
 
 	'env': 'production',
 
+	// API Base URL
 	'apiURL': 'https://coworking.ldaniel.eu/',
 
+	// Base location (map)
 	'location': {
 		'name': 'berlin',
 		'displayName': 'Berlin',
 		'lat': 52.5172462,
 		'lng': 13.4193396,
 		'zoom': 11
+	},
+
+	// Currency
+	'currency': {
+		'symbol': '€',
+		'after': false,
 	},
 
 	'googleMapsAPIKey': 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
@@ -52,6 +60,28 @@ const router = new VueRouter({
 	scrollBehavior,
 	linkActiveClass: 'isActive',
 })
+
+
+// Mixins (global helpers)
+Vue.mixin({
+  methods: {
+
+    getPrice(inputPrice) {
+
+      // set symbol before or after
+      prefix = (config.currency.after == true) ? '' : config.currency.symbol + ' ';
+      postfix = (config.currency.after == true) ? ' ' + config.currency.symbol : '';
+
+      // set price value
+      price = (inputPrice > 0) ? inputPrice : '—';
+
+      // output string
+      return prefix + price + postfix;
+      
+    }
+  }
+})
+
 
 var app = new Vue({
 	el: '#app',

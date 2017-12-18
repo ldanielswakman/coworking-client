@@ -91,12 +91,15 @@ Vue.component('space-item', {
   `,
 
   computed: {
+
     hoverState: function() {
       return this.mapHovered == this.space.id
     }
+    
   },
 
   methods: {
+
     getType(id) {
 
       output = '';
@@ -107,10 +110,6 @@ Vue.component('space-item', {
       }
       return output;
 
-    },
-
-    getPrice(price_month) {
-      return (price_month > 0) ? price_month + '₺' : '— ₺'
     },
 
     getBadgeClass(id) {
@@ -179,7 +178,7 @@ Vue.component('space-workspaces', {
             <div class="col-xs-9 col-sm-12 u-mb4">
               <h4>{{ ws.type }}</h4>
 
-              <span class="u-text-15x c-themeblue">{{ showPrice(ws.price_month) }}</span>
+              <span class="u-text-15x c-themeblue">{{ getPrice(ws.price_month) }}</span>
               <p class="u-mv0 u-opacity50"><small>per month</small></p>
             </div>
           </div>
@@ -203,14 +202,6 @@ Vue.component('space-workspaces', {
         }
       }
       return false;
-    },
-
-    showPrice(data) {
-      output = '—';
-      if(data > 0) {
-        output = Math.round(data) + ' ₺';
-      }
-      return output;
     }
 
   },
@@ -357,7 +348,7 @@ Vue.component('workspaces-prices', {
       n_counted = 0;
       ws_total = 0;
       prefix = '<b>'; // <small class="u-opacity50">Average:</small><br>
-      suffix = '</b> ₺<br><span>per ' + time + '</span>';
+      suffix = '</b><br><span>per ' + time + '</span>';
 
       // Find where 
       for(i in data) {
@@ -373,9 +364,9 @@ Vue.component('workspaces-prices', {
 
         }
       }
-
-      ws_avg = (n_counted > 0) ? (ws_total/n_counted).toFixed(0) : '—';
-      return prefix + ws_avg + suffix;
+      
+      price = this.getPrice( (ws_total/n_counted).toFixed(0) );
+      return prefix + price + suffix;
 
     }
   },
@@ -505,7 +496,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
   mounted() {
 
     // request space data
-    axios.get(this.$root.apiURL + 'api/' + this.$root.location + '/' + this.id).then(
+    axios.get(this.$root.apiURL + 'api/' + this.$root.location.name + '/' + this.id).then(
       response => {
         this.space = response.data.response;
         this.googlePlaceID = response.data.response.google_place_id;
@@ -694,14 +685,22 @@ var defaultConfig = {
 
 	'env': 'production',
 
+	// API Base URL
 	'apiURL': 'https://coworking.ldaniel.eu/',
 
+	// Base location (map)
 	'location': {
 		'name': 'berlin',
 		'displayName': 'Berlin',
 		'lat': 52.5172462,
 		'lng': 13.4193396,
 		'zoom': 11
+	},
+
+	// Currency
+	'currency': {
+		'symbol': '€',
+		'after': false,
 	},
 
 	'googleMapsAPIKey': 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
@@ -743,6 +742,28 @@ const router = new VueRouter({
 	scrollBehavior,
 	linkActiveClass: 'isActive',
 })
+
+
+// Mixins (global helpers)
+Vue.mixin({
+  methods: {
+
+    getPrice(inputPrice) {
+
+      // set symbol before or after
+      prefix = (config.currency.after == true) ? '' : config.currency.symbol + ' ';
+      postfix = (config.currency.after == true) ? ' ' + config.currency.symbol : '';
+
+      // set price value
+      price = (inputPrice > 0) ? inputPrice : '—';
+
+      // output string
+      return prefix + price + postfix;
+      
+    }
+  }
+})
+
 
 var app = new Vue({
 	el: '#app',

@@ -16,7 +16,7 @@ Vue.component('space-workspaces', {
             <div class="col-xs-9 col-sm-12 u-mb4">
               <h4>{{ ws.type }}</h4>
 
-              <span class="u-text-15x c-themeblue">{{ showPrice(ws.price_month) }}</span>
+              <span class="u-text-15x c-themeblue">{{ getPrice(ws.price_month) }}</span>
               <p class="u-mv0 u-opacity50"><small>per month</small></p>
             </div>
           </div>
@@ -40,14 +40,6 @@ Vue.component('space-workspaces', {
         }
       }
       return false;
-    },
-
-    showPrice(data) {
-      output = '—';
-      if(data > 0) {
-        output = Math.round(data) + ' ₺';
-      }
-      return output;
     }
 
   },

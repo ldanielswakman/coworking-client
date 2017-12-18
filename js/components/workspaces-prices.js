@@ -60,7 +60,7 @@ Vue.component('workspaces-prices', {
       n_counted = 0;
       ws_total = 0;
       prefix = '<b>'; // <small class="u-opacity50">Average:</small><br>
-      suffix = '</b> ₺<br><span>per ' + time + '</span>';
+      suffix = '</b><br><span>per ' + time + '</span>';
 
       // Find where 
       for(i in data) {
@@ -76,9 +76,9 @@ Vue.component('workspaces-prices', {
 
         }
       }
-
-      ws_avg = (n_counted > 0) ? (ws_total/n_counted).toFixed(0) : '—';
-      return prefix + ws_avg + suffix;
+      
+      price = this.getPrice( (ws_total/n_counted).toFixed(0) );
+      return prefix + price + suffix;
 
     }
   },

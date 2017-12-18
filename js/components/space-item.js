@@ -43,12 +43,15 @@ Vue.component('space-item', {
   `,
 
   computed: {
+
     hoverState: function() {
       return this.mapHovered == this.space.id
     }
+    
   },
 
   methods: {
+
     getType(id) {
 
       output = '';
@@ -59,10 +62,6 @@ Vue.component('space-item', {
       }
       return output;
 
-    },
-
-    getPrice(price_month) {
-      return (price_month > 0) ? price_month + '₺' : '— ₺'
     },
 
     getBadgeClass(id) {
