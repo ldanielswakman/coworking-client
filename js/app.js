@@ -21,12 +21,16 @@ var defaultConfig = {
 		'after': false,
 	},
 
+	// Google Maps API key
 	'googleMapsAPIKey': 'AIzaSyBMFotJFUPtOhGds8oklETkMO9knxQvnB0',
+
+	// Google Analytics Property ID
+	'googleAnalyticsID': 'UA-9833982-34',
 	
 };
 
 config = (typeof customConfig !== 'undefined') ? customConfig : defaultConfig;
-config = defaultConfig;
+// config = defaultConfig;
 
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {
@@ -66,19 +70,19 @@ const router = new VueRouter({
 Vue.mixin({
   methods: {
 
-    getPrice(inputPrice) {
+	getPrice(inputPrice) {
 
-      // set symbol before or after
-      prefix = (config.currency.after == true) ? '' : config.currency.symbol + ' ';
-      postfix = (config.currency.after == true) ? ' ' + config.currency.symbol : '';
+	  // set symbol before or after
+	  prefix = (config.currency.after == true) ? '' : config.currency.symbol + ' ';
+	  postfix = (config.currency.after == true) ? ' ' + config.currency.symbol : '';
 
-      // set price value
-      price = (inputPrice > 0) ? inputPrice : '—';
+	  // set price value
+	  price = (inputPrice > 0) ? inputPrice : '—';
 
-      // output string
-      return prefix + price + postfix;
-      
-    }
+	  // output string
+	  return prefix + price + postfix;
+	  
+	}
   }
 })
 
@@ -106,5 +110,21 @@ var app = new Vue({
 			// { id: 7, name: 'Meeting Room' },
 		],
 	},
+	created: function () {
+
+		// Google Analytics; do not run when local
+		if(window.location.href.indexOf('localhost') == -1) {
+
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', config.googleMapsAPIKey, 'auto');
+			ga('send', 'pageview');
+
+		}
+
+	}
 });
 
