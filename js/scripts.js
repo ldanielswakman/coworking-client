@@ -714,6 +714,11 @@ var defaultConfig = {
 config = (typeof customConfig !== 'undefined') ? customConfig : defaultConfig;
 // config = defaultConfig;
 
+// if localhost, override API URL
+if(window.location.href.indexOf('localhost') !== -1) {
+	config.apiURL = 'http://localhost/coworking-api/';
+}
+
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {
 	load: {
