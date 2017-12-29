@@ -603,7 +603,7 @@ var SpacesIndex = Vue.component('spaces-index', {
     return {
       spaces: [],
       // List filter/sort defaults
-      spaceOrder: 'id',
+      spaceOrder: 'random',
       filterText: '',
       workspaceFilter: 0,
       mapHovered: ''
