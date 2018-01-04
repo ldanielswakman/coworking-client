@@ -2292,6 +2292,28 @@ a.card {
     -moz-transform: translateY(0);
     transform: translateY(0); }
 
+.carousel {
+  background: #30376b; }
+  .carousel .VueCarousel-slide img {
+    display: block;
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; }
+  .carousel .VueCarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .carousel .VueCarousel-dot .VueCarousel-dot-inner {
+    background: rgba(255, 255, 255, 0.25) !important; }
+  .carousel .VueCarousel-dot:hover .VueCarousel-dot-inner {
+    background: #6776E6 !important; }
+  .carousel .VueCarousel-dot.VueCarousel-dot--active .VueCarousel-dot-inner {
+    background: #FFFFFF !important; }
+
 dialog, .dialog {
   position: fixed;
   top: 0;
