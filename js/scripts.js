@@ -46,6 +46,31 @@ var AppNav = Vue.component('app-nav', {
   }
 });
 
+Vue.component('space-gallery', {
+  props: ['spaceGallery', 'spaceName'],
+  components: {
+    'carousel': VueCarousel.Carousel,
+    'slide': VueCarousel.Slide
+  },
+  template: `
+    <div class="gallery row row--nopadding card-zigzag--right">
+
+      <router-link to="/" exact class="space-detail__close">&times;</router-link>
+
+      <!-- col-xs-6 col-sm-4 -->
+      <carousel>
+        <slide v-for="image, key, index in spaceGallery">
+          <figure>
+            <img v-if="image.large" v-bind:src="image.large" v-bind:alt="spaceName + ' - ' + index" />
+            <img v-if="!image.large" v-bind:src="image.medium" v-bind:alt="spaceName + ' - ' + index" />
+          </figure>
+        </slide>
+      </carousel>
+
+    </div>
+  `
+});
+
 Vue.component('space-item', {
   props: ['space', 'mapHovered', 'visibleTypes', 'workspaceFilter'],
   template: `
@@ -382,19 +407,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
 
       <div class="space-detail">
 
-        <div class="gallery row row--nopadding">
-
-          <router-link to="/" exact class="space-detail__close">&times;</router-link>
-
-          <!-- col-xs-6 col-sm-4 -->
-          <div v-for="image, key, index in spaceGallery" v-bind:space="space" v-if="key < 1">
-            <figure>
-              <img v-if="image.URL.large" v-bind:src="image.URL.large" v-bind:alt="space.name + ' - ' + index" />
-              <img v-if="!image.URL.large" v-bind:src="image.URL.medium" v-bind:alt="space.name + ' - ' + index" />
-            </figure>
-          </div>
-
-        </div>
+        <space-gallery v-bind:spaceGallery="spaceGallery" v-bind:spaceName="space.name"></space-gallery>
 
         <div class="card card--comfy">
           <div class="card__panel card-zigzag--left u-relative u-z2">
@@ -478,9 +491,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
       if(space.gallery) {
         gallery = space.gallery;
       } else if(space.image) {
-        gallery.push({
-          "URL": space.image
-        });
+        gallery.push(space.image);
       }
 
       return gallery;
@@ -719,14 +730,25 @@ if(window.location.href.indexOf('localhost') !== -1) {
 	config.apiURL = 'http://localhost/coworking-api/';
 }
 
+
+
+
+
+
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {
 	load: {
 		key: config.googleMapsAPIKey
 	}
 });
+Vue.use(VueCarousel);
 
 
+
+
+
+
+// Vue Router
 const routes = [
 	{ path: '/', component: SpacesIndex },
 	{ path: '/space/:id', component: SpacesDetail, props: true },
@@ -753,7 +775,11 @@ const router = new VueRouter({
 })
 
 
-// Mixins (global helpers)
+
+
+
+
+// Vue Mixins (global helpers)
 Vue.mixin({
   methods: {
 
@@ -774,6 +800,10 @@ Vue.mixin({
 })
 
 
+
+
+
+// Vue Instance
 var app = new Vue({
 	el: '#app',
 	router: router,

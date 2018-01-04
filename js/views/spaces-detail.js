@@ -7,19 +7,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
 
       <div class="space-detail">
 
-        <div class="gallery row row--nopadding">
-
-          <router-link to="/" exact class="space-detail__close">&times;</router-link>
-
-          <!-- col-xs-6 col-sm-4 -->
-          <div v-for="image, key, index in spaceGallery" v-bind:space="space" v-if="key < 1">
-            <figure>
-              <img v-if="image.URL.large" v-bind:src="image.URL.large" v-bind:alt="space.name + ' - ' + index" />
-              <img v-if="!image.URL.large" v-bind:src="image.URL.medium" v-bind:alt="space.name + ' - ' + index" />
-            </figure>
-          </div>
-
-        </div>
+        <space-gallery v-bind:spaceGallery="spaceGallery" v-bind:spaceName="space.name"></space-gallery>
 
         <div class="card card--comfy">
           <div class="card__panel card-zigzag--left u-relative u-z2">
@@ -103,9 +91,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
       if(space.gallery) {
         gallery = space.gallery;
       } else if(space.image) {
-        gallery.push({
-          "URL": space.image
-        });
+        gallery.push(space.image);
       }
 
       return gallery;

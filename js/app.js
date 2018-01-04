@@ -37,14 +37,25 @@ if(window.location.href.indexOf('localhost') !== -1) {
 	config.apiURL = 'http://localhost/coworking-api/';
 }
 
+
+
+
+
+
 // Vue Use Plugins
 Vue.use(VueGoogleMaps, {
 	load: {
 		key: config.googleMapsAPIKey
 	}
 });
+Vue.use(VueCarousel);
 
 
+
+
+
+
+// Vue Router
 const routes = [
 	{ path: '/', component: SpacesIndex },
 	{ path: '/space/:id', component: SpacesDetail, props: true },
@@ -71,7 +82,11 @@ const router = new VueRouter({
 })
 
 
-// Mixins (global helpers)
+
+
+
+
+// Vue Mixins (global helpers)
 Vue.mixin({
   methods: {
 
@@ -92,6 +107,10 @@ Vue.mixin({
 })
 
 
+
+
+
+// Vue Instance
 var app = new Vue({
 	el: '#app',
 	router: router,
