@@ -832,8 +832,7 @@ var app = new Vue({
 
 			// Calling Google Tag Manager Script
 			var e = document.createElement("script");
-			e.src = '"https://www.googletagmanager.com/gtag/js?id=' + config.googleMapsAPIKey;
-			e.type="text/javascript";
+			e.src = 'https://www.googletagmanager.com/gtag/js?id=' + config.googleAnalyticsID;
 			document.getElementsByTagName("head")[0].appendChild(e);
 
 			// Activate google tag
@@ -841,7 +840,7 @@ var app = new Vue({
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
-			gtag('config', config.googleMapsAPIKey);
+			gtag('config', config.googleAnalyticsID);
 
 		}
 
