@@ -139,13 +139,18 @@ var app = new Vue({
 		// Google Analytics; do not run when local
 		if(window.location.href.indexOf('localhost') == -1) {
 
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			// Calling Google Tag Manager Script
+			var e = document.createElement("script");
+			e.src = '"https://www.googletagmanager.com/gtag/js?id=' + config.googleMapsAPIKey;
+			e.type="text/javascript";
+			document.getElementsByTagName("head")[0].appendChild(e);
 
-			ga('create', config.googleMapsAPIKey, 'auto');
-			ga('send', 'pageview');
+			// Activate google tag
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', config.googleMapsAPIKey);
 
 		}
 
