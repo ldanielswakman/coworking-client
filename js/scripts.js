@@ -22,11 +22,6 @@ var AppNav = Vue.component('app-nav', {
           </object>
         </div>
 
-        <a href="javascript:void(0)" v-if="indexPage !== false" class="nav__toggle">
-          <i v-if="isExpanded" class="ti ti-arrow-circle-down ti-2x"></i>
-          <i v-if="!isExpanded" class="ti ti-arrow-circle-up ti-2x"></i>
-        </a>
-
       </div>
 
       <h1 v-if="false" class="c-greylight"><span class="badge badge--large bg-themeblue c-white u-mr1">{{ spaces_count }}</span> Spaces</h1>

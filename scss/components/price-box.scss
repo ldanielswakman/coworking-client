@@ -8,6 +8,8 @@
   justify-content: center;
   width: 100%;
 
+  pointer-events: none;
+
 
   @include tabletAndDown() {
     bottom: 5rem;
@@ -43,6 +45,8 @@
     @include prefix(border-radius, 0.5rem);
     background-color: $greylighter;
     list-style: none;
+
+    pointer-events: all;
 
     li {
       display: inline-block;

@@ -2,7 +2,7 @@
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	z-index: 6;
+	z-index: 5;
 	background-color: $white;
 	display: block;
 	width: 100vw;
@@ -21,7 +21,7 @@
 	@include prefix(transform, translateY(50vh));
 
 	&:before {
-		content: "";
+	content: "";
 		position: absolute;
 		bottom: 100%;
 		left: 0;
@@ -42,5 +42,9 @@
 		&:before {
 			opacity: 1;
 		}
+	}
+
+	@include tabletAndDown() {
+		padding-bottom: calc(2vw + 13rem);
 	}
 }
