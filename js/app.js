@@ -26,6 +26,9 @@ var defaultConfig = {
 
 	// Google Analytics Property ID
 	'googleAnalyticsID': 'UA-9833982-34',
+
+	// New Submission Form URL
+	'submitform_url': 'https://goo.gl/forms/lMnITffrCzHZCJRJ2',
 	
 };
 
@@ -118,6 +121,7 @@ var app = new Vue({
 		googleMapsAPIKey: config.googleMapsAPIKey,
 		apiURL: config.apiURL,
 		location: config.location,
+		submitform_url: config.submitform_url,
 		visibleTypes: [
 			{ id: 0, name: 'All' },
 			{ id: 1, name: 'Business Center' },

@@ -16,7 +16,7 @@ var AppNav = Vue.component('app-nav', {
         <div class="u-relative">
           <object class="button-wrapper" :class="{ isExpanded: btnWrapperExpanded }" @click="btnWrapperExpanded = !btnWrapperExpanded">
             <ul>
-              <li><a href="https://goo.gl/forms/x7rcWj1R1OKMKyQF2" target="_blank" class="button button--small button--theme u-mr1">Submit new space</a></li>
+              <li><a v-bind:href="$root.submitform_url" target="_blank" class="button button--small button--theme u-mr1">Submit new space</a></li>
             </ul>
             <button class="button button--circle button--lightest" data-role="close">+</button>
           </object>
@@ -712,6 +712,9 @@ var defaultConfig = {
 
 	// Google Analytics Property ID
 	'googleAnalyticsID': 'UA-9833982-34',
+
+	// New Submission Form URL
+	'submitform_url': 'https://goo.gl/forms/lMnITffrCzHZCJRJ2',
 	
 };
 
@@ -804,6 +807,7 @@ var app = new Vue({
 		googleMapsAPIKey: config.googleMapsAPIKey,
 		apiURL: config.apiURL,
 		location: config.location,
+		submitform_url: config.submitform_url,
 		visibleTypes: [
 			{ id: 0, name: 'All' },
 			{ id: 1, name: 'Business Center' },

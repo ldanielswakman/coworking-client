@@ -2498,7 +2498,7 @@ nav {
   z-index: 6; }
   nav .nav__left,
   nav .nav__right {
-    flex-basis: 33%; }
+    flex-basis: calc(50% - 15.5rem); }
   nav .nav__left {
     display: flex; }
     nav .nav__left .logo {
