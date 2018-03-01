@@ -7,7 +7,7 @@
 
 		<!-- Meta Tags -->
 		<meta name="description" content="Coworking Berlin is the easiest path to all of Berlin's Coworking Spaces." />
-		<meta name="keywords" content="berlin, coworking, space, coworker, office, work, working, ofis, masa, " />
+		<meta name="keywords" content="berlin, coworking, space, coworker, office, work, working, arbeiten" />
 		<meta name="author" content="L Daniel Swakman, ldaniel.eu" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -42,165 +42,495 @@
 		<div id="app">
 			<router-view>
 
-				<!-- Dummy Content Istanbul (SEO) -->
-        <div class="main">
-            <nav>
-                <div class="nav__left">
-                    <a href="#/" class="logo router-link-exact-active isActive">
-                        <!----><img src="images/logo-istanbul.svg" alt="Coworking İstanbul"></a>
-                    <div class="u-relative">
-                        <object class="button-wrapper">
-                            <ul>
-                                <li><a href="https://goo.gl/forms/x7rcWj1R1OKMKyQF2" target="_blank" class="button button--small button--theme u-mr1">Submit new space</a></li>
-                            </ul>
-                            <button data-role="close" class="button button--circle button--lightest">+</button>
-                        </object>
-                    </div> <a href="javascript:void(0)" class="nav__toggle"><i class="ti ti-arrow-circle-down ti-2x"></i> <!----></a></div>
+				<!-- Dummy Content Berlin (SEO) -->
+                    <div class="main">
+        <nav>
+            <div class="nav__left">
+                <a class="logo router-link-exact-active isActive" href="#/"><!----> <img alt="Coworking Berlin" src="images/logo-berlin.svg"></a>
+                <div class="u-relative">
+                    <object class="button-wrapper">
+                        <ul>
+                            <li>
+                                <a class="button button--small button--theme u-mr1" href="https://goo.gl/forms/x7rcWj1R1OKMKyQF2" target="_blank">Submit new space</a>
+                            </li>
+                        </ul><button class="button button--circle button--lightest" data-role="close">+</button>
+                    </object>
+                </div>
+            </div><!---->
+            <div class="nav__right">
+                <small class="c-greylight"><a href="http://www.ldaniel.eu/" target="_blank">by ldaniel.eu</a></small>
+            </div>
+        </nav>
+        <div class="splash-dialog">
+            <img alt="Coworking Berlin" src="images/logo-berlin.svg" style="height: 3rem;">
+            <h3 class="u-mb3 u-mt3"></h3>
+            <blockquote>
+                Finding a <b>coworking space</b> in Berlin doesn't have to be hard...
+            </blockquote><button class="button button--theme">Show Spaces</button>
+        </div>
+        <div class="price-box isExpanded">
+            <ul>
                 <!---->
-                <div class="nav__right"><small class="c-greylight"><a href="http://www.ldaniel.eu/" target="_blank">by ldaniel.eu</a></small></div>
-            </nav>
-            <div class="splash-dialog"><img src="images/logo-istanbul.svg" alt="Coworking İstanbul" style="height: 3rem;">
-                <h3 class="u-mb3 u-mt3"><blockquote>Finding a <b>coworking space</b> in İstanbul doesn't have to be hard...</blockquote></h3>
-                <button class="button button--theme">Show Spaces</button>
-            </div>
-            <div class="price-box isExpanded">
-                <ul>
-                    <!---->
-                    <li class="u-relative isActive"><img src="images/type_1.svg" alt="" class="icon"> <span class="name">Hot Desk</span> <small class="price-label">33 ₺<br><span>per day</span></small></li>
-                    <li class="u-relative isActive"><img src="images/type_2.svg" alt="" class="icon"> <span class="name">Dedicated Desk</span> <small class="price-label">1013 ₺<br><span>per month</span></small></li>
-                    <li class="u-relative isActive"><img src="images/type_5.svg" alt="" class="icon"> <span class="name">Private Office</span> <small class="price-label">3425 ₺<br><span>per month</span></small></li>
-                </ul>
-            </div>
-            <div class="spaces-index">
-                <div class="spaces-toolbar u-ph1 u-pv3"><span class="field-wrap field-wrap--select spaces-toolbar__type"><select class="field"><option value="0">All</option><option value="1">Hot Desk</option><option value="2">Dedicated Desk</option><option value="5">Private Office</option></select></span> <span class="field-wrap u-flex-grow1 spaces-toolbar__search"><input type="text" placeholder="Filter" class="field u-widthfull"> <!----></span>
-                    <button class="button button--outline"><i class="ti ti-exchange-vertical"></i> name</button>
-                    <!---->
+                <li class="u-relative isActive"><img alt="" class="icon" src="images/type_1.svg"> <span class="name">Hot Desk</span> <small class="price-label"><b>€ 23</b><br>
+                <span>per day</span></small></li>
+                <li class="u-relative isActive"><img alt="" class="icon" src="images/type_2.svg"> <span class="name">Dedicated Desk</span> <small class="price-label"><b>€ 260</b><br>
+                <span>per month</span></small></li>
+                <li class="u-relative isActive"><img alt="" class="icon" src="images/type_5.svg"> <span class="name">Private Office</span> <small class="price-label"><b>€ 797</b><br>
+                <span>per month</span></small></li>
+            </ul>
+        </div>
+        <div class="spaces-map">
+            <div class="vue-map-container">
+                <div class="vue-map" style="overflow: hidden;">
+                    <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                        <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+                            <div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;" tabindex="0">
+                                <div style="z-index: 1; position: absolute; left: 50%; top: 50%; transform: translate(0px, 0px);">
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                            <div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -87, -174);">
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 0px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -256px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -256px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 0px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 256px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 256px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -512px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -512px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 512px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 512px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -768px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -768px; top: 0px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                        <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                                            <div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -87, -174);">
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -768px; top: 256px;"></div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -768px; top: 0px;"></div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 32px; height: 32px; overflow: hidden; position: absolute; left: -7px; top: 66px; z-index: 98;"><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        <div style="width: 32px; height: 32px; overflow: hidden; position: absolute; left: -52px; top: -80px; z-index: -48;"><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        <div style="width: 32px; height: 32px; overflow: hidden; position: absolute; left: -26px; top: 3px; z-index: 35;"><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        <div style="width: 32px; height: 32px; overflow: hidden; position: absolute; left: -58px; top: -89px; z-index: -57;"><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        <div style="width: 32px; height: 32px; overflow: hidden; position: absolute; left: -62px; top: -20px; z-index: 12;"><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        <div style="width: 32px; height: 32px; overflow: hidden; position: absolute; left: 32px; top: -19px; z-index: 13;"><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        <div style="width: 32px; height: 32px; overflow: hidden; position: absolute; left: -115px; top: 50px; z-index: 82;"><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        <div style="width: 32px; height: 32px; overflow: hidden; position: absolute; left: -56px; top: -60px; z-index: -28;"><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        <div style="width: 32px; height: 32px; overflow: hidden; position: absolute; left: -40px; top: -50px; z-index: -18;"><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    </div>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                        <div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -87, -174);">
+                                            <div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1100!3i672!4i256!2m3!1e0!2sm!3i412111867!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=107346" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1099!3i672!4i256!2m3!1e0!2sm!3i412111867!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=96925" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1099!3i671!4i256!2m3!1e0!2sm!3i412111867!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=26882" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1100!3i671!4i256!2m3!1e0!2sm!3i412111867!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=37303" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1101!3i671!4i256!2m3!1e0!2sm!3i412111867!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=124543" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1101!3i672!4i256!2m3!1e0!2sm!3i412111867!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=63515" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1098!3i672!4i256!2m3!1e0!2sm!3i412111662!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=31499" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1098!3i671!4i256!2m3!1e0!2sm!3i412111675!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=75588" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1102!3i671!4i256!2m3!1e0!2sm!3i412111819!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=46959" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1102!3i672!4i256!2m3!1e0!2sm!3i412111819!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=117002" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: -768px; top: 256px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1097!3i672!4i256!2m3!1e0!2sm!3i412111819!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=19763" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div style="position: absolute; left: -768px; top: 0px; width: 256px; height: 256px;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1097!3i671!4i256!2m3!1e0!2sm!3i412111819!3m14!2sen-GB!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjF8cC5zOjM1fHAubDo0MCxzLmU6bC50LnN8cC5jOiNmZmY1ZjVmNXxwLmw6MTV8cC52Om9uLHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmw6MTV8cC53OjEscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjMwMzc2YixzLnQ6NXxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6Z3xwLmM6I2ZmZWVlZWVlfHAubDoyMCxzLnQ6MnxzLmU6bC50LmZ8cC5jOiNmZjc1NzU3NSxzLnQ6NDB8cy5lOmd8cC5jOiNmZmU1ZTVlNXxwLmw6MjEscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnfHAubDoyMCxzLnQ6NTB8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQ5fHMuZTpnfHAuYzojZmZkYWRhZGEscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5sOjI5fHAudzowLjIscy50OjQ5fHMuZTpsLnQuZnxwLmM6I2ZmNjE2MTYxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAubDoxNixzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjR8cy5lOmd8cC5sOjE5LHMudDo2NXxzLmU6Z3xwLmM6I2ZmZTVlNWU1LHMudDo2NnxzLmU6Z3xwLmM6I2ZmZWVlZWVlLHMudDo2fHMuZTpnfHAuYzojZmZjZWQxZTB8cC5sOjE1LHMudDo2fHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTll!4e0!5m1!5f2!23i1301875&amp;token=80791" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                                    <p class="gm-style-pbt"></p>
+                                </div>
+                                <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                                    <div style="z-index: 1; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></div>
+                                    <div style="z-index: 4; position: absolute; left: 50%; top: 50%; transform: translate(0px, 0px);">
+                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                                            <div class="gmnoprint" style="width: 32px; height: 32px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; touch-action: none; left: -7px; top: 66px; z-index: 98;" title=""><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div class="gmnoprint" style="width: 32px; height: 32px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; touch-action: none; left: -52px; top: -80px; z-index: -48;" title=""><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div class="gmnoprint" style="width: 32px; height: 32px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; touch-action: none; left: -26px; top: 3px; z-index: 35;" title=""><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div class="gmnoprint" style="width: 32px; height: 32px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; touch-action: none; left: -58px; top: -89px; z-index: -57;" title=""><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div class="gmnoprint" style="width: 32px; height: 32px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; touch-action: none; left: -62px; top: -20px; z-index: 12;" title=""><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div class="gmnoprint" style="width: 32px; height: 32px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; touch-action: none; left: 32px; top: -19px; z-index: 13;" title=""><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div class="gmnoprint" style="width: 32px; height: 32px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; touch-action: none; left: -115px; top: 50px; z-index: 82;" title=""><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div class="gmnoprint" style="width: 32px; height: 32px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; touch-action: none; left: -56px; top: -60px; z-index: -28;" title=""><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                            <div class="gmnoprint" style="width: 32px; height: 32px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; touch-action: none; left: -40px; top: -50px; z-index: -18;" title=""><img alt="" draggable="false" src="images/location-pin.svg" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                        </div>
+                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div><iframe frameborder="0" src="about:blank" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
+                            <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                                <a href="https://maps.google.com/maps?ll=52.517246,13.41934&amp;z=11&amp;t=m&amp;hl=en-GB&amp;gl=US&amp;mapclient=apiv3" style="position: static; overflow: visible; float: none; display: inline;" target="_blank" title="Click to see this area on Google Maps">
+                                <div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5_hdpi.png" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a>
+                            </div>
+                            <div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 378px; top: 15px;">
+                                <div style="padding: 0px 0px 10px; font-size: 16px;">
+                                    Map Data
+                                </div>
+                                <div style="font-size: 13px;">
+                                    Map data ©2018 GeoBasis-DE/BKG (©2009), Google
+                                </div>
+                                <div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img alt="" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                            </div>
+                            <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 245px;">
+                                <div class="gm-style-cc" draggable="false" style="user-select: none; height: 14px; line-height: 14px;">
+                                    <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                        <div style="width: 1px;"></div>
+                                        <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                    </div>
+                                    <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                        <a style="text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2018 GeoBasis-DE/BKG (©2009), Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+                                <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+                                    Map data ©2018 GeoBasis-DE/BKG (©2009), Google
+                                </div>
+                            </div>
+                            <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;">
+                                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                    <div style="width: 1px;"></div>
+                                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                </div>
+                                <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                    <a href="https://www.google.com/intl/en-GB_US/help/terms_maps.html" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);" target="_blank">Terms of Use</a>
+                                </div>
+                            </div><button aria-label="Toggle fullscreen view" draggable="false" style="background: none; border: 0px; margin: 10px 14px; padding: 0px; position: absolute; cursor: pointer; user-select: none; width: 25px; height: 25px; overflow: hidden; top: 0px; right: 0px;" title="Toggle fullscreen view" type="button"><img alt="" class="gm-fullscreen-control" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></button>
+                            <div class="gm-style-cc" draggable="false" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                    <div style="width: 1px;"></div>
+                                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                </div>
+                                <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                    <a href="https://www.google.com/maps/@52.5172462,13.4193396,11z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" rel="noopener" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" target="_blank" title="Report errors in the road map or imagery to Google">Report a map error</a>
+                                </div>
+                            </div>
+                            <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" style="margin: 10px; user-select: none; position: absolute; bottom: 69px; right: 28px;">
+                                <div class="gmnoprint" style="position: absolute; left: 0px; top: 0px;">
+                                    <div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;">
+                                        <button aria-label="Zoom in" draggable="false" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 28px; height: 27px; top: 0px; left: 0px;" title="Zoom in" type="button">
+                                        <div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img alt="" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl_hdpi.png" style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></button>
+                                        <div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div><button aria-label="Zoom out" draggable="false" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 28px; height: 27px; top: 0px; left: 0px;" title="Zoom out" type="button">
+                                        <div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img alt="" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl_hdpi.png" style="position: absolute; left: 0px; top: -15px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="spaces-list row">
-                    <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
-                        <a href="#/space/2" class="">
-                            <div class="card card--list">
-                                <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/istanbul/impacthub-istanbul/impacthubist-600x400.jpg&quot;);"></div>
-                                <div class="card__panel">
-                                    <div class="card__overlay">
-                                        COWORKING SPACE
-                                    </div>
-                                    <h3>ImpactHUB İstanbul</h3>
-                                    <p>
-                                        Impact Hub Istanbul is a member-based co-working space and event venue that unites and empowers impact-driven individuals.
-                                    </p>
-                                    <div class="u-flex"><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_2.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Dedicated Desk</small><br> <small><b>— ₺</b> per month</small></div></span></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
-                        <a href="#/space/3" class="">
-                            <div class="card card--list">
-                                <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/istanbul/habita/habita-600x300.jpg&quot;);"></div>
-                                <div class="card__panel">
-                                    <div class="card__overlay">
-                                        COWORKING SPACE
-                                    </div>
-                                    <h3>Habita</h3>
-                                    <p>
-                                        A funky industrial atmosphere pervades the space of habita sitting in exotic Istanbul, Turkey.
-                                    </p>
-                                    <div class="u-flex"><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_1.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Hot Desk</small><br> <small><b>590 ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_2.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Dedicated Desk</small><br> <small><b>— ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_5.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Private Office</small><br> <small><b>— ₺</b> per month</small></div></span></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
-                        <a href="#/space/4" class="">
-                            <div class="card card--list">
-                                <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/istanbul/atolye-istanbul/atolye-large-600x352.jpg&quot;);"></div>
-                                <div class="card__panel">
-                                    <div class="card__overlay">
-                                        COWORKING SPACE
-                                    </div>
-                                    <h3>Atölye İstanbul</h3>
-                                    <p>
-                                        ATÖLYE is a diligent curator of a strong community around design, entrepreneurship and technology.
-                                    </p>
-                                    <div class="u-flex"><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_1.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Hot Desk</small><br> <small><b>— ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_2.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Dedicated Desk</small><br> <small><b>— ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_5.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Private Office</small><br> <small><b>— ₺</b> per month</small></div></span></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
-                        <a href="#/space/8113" class="">
-                            <div class="card card--list">
-                                <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/istanbul/kolektif-house-sishane/kolektif-house-600x338.png&quot;);"></div>
-                                <div class="card__panel">
-                                    <div class="card__overlay">
-                                        COWORKING SPACE
-                                    </div>
-                                    <h3>Kolektif House Şişhane</h3>
-                                    <p>
-                                        We have joined the culture and arts venue IKSV in the historical Deniz Palas building, now called Nejat Eczabaşı, transforming their second floor into a living coworking space.
-                                    </p>
-                                    <div class="u-flex"><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_1.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Hot Desk</small><br> <small><b>490 ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_2.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Dedicated Desk</small><br> <small><b>790 ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_5.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Private Office</small><br> <small><b>3200 ₺</b> per month</small></div></span></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
-                        <a href="#/space/8114" class="">
-                            <div class="card card--list">
-                                <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/istanbul/kolektif-house-levent/levent-4-600x400.jpg&quot;);"></div>
-                                <div class="card__panel">
-                                    <div class="card__overlay">
-                                        COWORKING SPACE
-                                    </div>
-                                    <h3>Kolektif House Levent</h3>
-                                    <p>
-                                        In İstanbul’s financial district, we have turned an old embroidery factory into a living coworking space.
-                                    </p>
-                                    <div class="u-flex"><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_1.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Hot Desk</small><br> <small><b>890 ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_2.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Dedicated Desk</small><br> <small><b>1500 ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_5.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Private Office</small><br> <small><b>2900 ₺</b> per month</small></div></span></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
-                        <a href="#/space/8199" class="">
-                            <div class="card card--list">
-                                <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/istanbul/workhaus/workhaus-600x429.png&quot;);"></div>
-                                <div class="card__panel">
-                                    <div class="card__overlay">
-                                        COWORKING SPACE
-                                    </div>
-                                    <h3>Workhaus</h3>
-                                    <p>
-                                        Workhaus is an office complex incorporating the entire necessary infrastructure for your comfort.
-                                    </p>
-                                    <div class="u-flex"><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_1.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Hot Desk</small><br> <small><b>50 ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_5.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Private Office</small><br> <small><b>3600 ₺</b> per month</small></div></span></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
-                        <a href="#/space/8859" class="">
-                            <div class="card card--list">
-                                <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/istanbul/workinton/workinton-levent-600x277.jpg&quot;);"></div>
-                                <div class="card__panel">
-                                    <div class="card__overlay">
-                                        BUSINESS CENTER
-                                    </div>
-                                    <h3>Workinton</h3>
-                                    <p>
-                                        Workinton Levent 199 combines the location advantage with its accessibility and advanced technical infrastructure, and is up for being the meeting base of the business world.
-                                    </p>
-                                    <div class="u-flex"><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_1.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Hot Desk</small><br> <small><b>465 ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_2.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Dedicated Desk</small><br> <small><b>750 ₺</b> per month</small></div></span><span class="hasTooltip"><div class="badge badge--small u-mr1"><img src="images/type_5.svg" alt="" style="width: 1.5rem; margin-top: 0.25rem;"></div> <div class="tooltip"><small class="u-opacity70">Private Office</small><br> <small><b>4000 ₺</b> per month</small></div></span></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="vue-map-hidden">
+                    <!----><!----><!----><!----><!----><!----><!----><!----><!---->
                 </div>
-                <div id="bottomspacer" style="height: 3.5rem;"></div>
             </div>
         </div>
-				<!-- End Dummy Content Istanbul (SEO) -->
+        <div class="spaces-index">
+            <div class="spaces-toolbar u-ph1 u-pv3">
+                <span class="field-wrap field-wrap--select spaces-toolbar__type"><select class="field">
+                    <option value="0">
+                        All
+                    </option>
+                    <option value="1">
+                        Hot Desk
+                    </option>
+                    <option value="2">
+                        Dedicated Desk
+                    </option>
+                    <option value="5">
+                        Private Office
+                    </option>
+                </select></span> <span class="field-wrap u-flex-grow1 spaces-toolbar__search"><input class="field u-widthfull" placeholder="Filter" type="text"> <!----></span> <!----> <!---->
+            </div>
+            <div class="spaces-list row">
+                <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
+                    <a class="" href="#/space/2">
+                    <div class="card card--list">
+                        <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/berlin/enklave/5708bc08150358bcab702024df5a1e0d-large-600x363.jpg&quot;);"></div>
+                        <div class="card__panel">
+                            <div class="card__overlay">
+                                COWORKING SPACE
+                            </div>
+                            <h3>Enklave</h3>
+                            <p>Low-cost coworking space for community loving freelancers and start-ups in Berlin Neukölln</p>
+                            <div class="u-flex">
+                                <span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_1.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Hot Desk</small><br>
+                                    <small><b>€ 149</b> per month</small></span>
+                                </div><span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_2.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Dedicated Desk</small><br>
+                                    <small><b>€ 249</b> per month</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
+                    <a class="" href="#/space/1">
+                    <div class="card card--list">
+                        <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/berlin/factory-mitte/aussenansicht_factory-600x400.jpg&quot;);"></div>
+                        <div class="card__panel">
+                            <div class="card__overlay">
+                                BUSINESS CENTER
+                            </div>
+                            <h3>Factory Mitte</h3>
+                            <p>Factory Berlin is a next generation business club, connecting innovators to build relationships that truly matter</p>
+                            <div class="u-flex">
+                                <span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_1.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Hot Desk</small><br>
+                                    <small><b>€ 50</b> per month</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
+                    <a class="" href="#/space/3">
+                    <div class="card card--list">
+                        <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/berlin/betahaus/7-600x400.jpg&quot;);"></div>
+                        <div class="card__panel">
+                            <div class="card__overlay">
+                                COWORKING SPACE
+                            </div>
+                            <h3>betahaus</h3>
+                            <p>betahaus is a coworking space and community for people who want to work on their own projects while exchanging knowledge, ideas, and inspiration with others</p>
+                            <div class="u-flex">
+                                <span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_1.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Hot Desk</small><br>
+                                    <small><b>€ 99</b> per month</small></span>
+                                </div><span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_2.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Dedicated Desk</small><br>
+                                    <small><b>€ 200</b> per month</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
+                    <a class="" href="#/space/4">
+                    <div class="card card--list">
+                        <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/berlin/agora-collective/14-600x400.jpg&quot;);"></div>
+                        <div class="card__panel">
+                            <div class="card__overlay">
+                                COWORKING SPACE
+                            </div>
+                            <h3>Ahoy! Berlin</h3>
+                            <p>We provide spaces that drive productivity and innovation. We empower our members professionally and personally</p>
+                            <div class="u-flex">
+                                <span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_1.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Hot Desk</small><br>
+                                    <small><b>€ 150</b> per month</small></span>
+                                </div><span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_2.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Dedicated Desk</small><br>
+                                    <small><b>€ 240</b> per month</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
+                    <a class="" href="#/space/5">
+                    <div class="card card--list">
+                        <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/berlin/mindspace-mitte/5ae439dc50995f2a4f2ef6c7bd2894e8-600x390.jpg&quot;);"></div>
+                        <div class="card__panel">
+                            <div class="card__overlay">
+                                COWORKING SPACE
+                            </div>
+                            <h3>Mindspace Mitte</h3>
+                            <p>Coworking In Berlin. Mindspace is placed in the heart of the cosmopolitan – amongst the tech giants, museums, fashion houses, and cafes, and in the midst of Berlin's thriving startup ecosystem</p>
+                            <div class="u-flex">
+                                <span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_1.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Hot Desk</small><br>
+                                    <small><b>€ 350</b> per month</small></span>
+                                </div><span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_5.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Private Office</small><br>
+                                    <small><b>€ 1000</b> per month</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
+                    <a class="" href="#/space/6">
+                    <div class="card card--list">
+                        <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/berlin/esdip/big-600x400.jpg&quot;);"></div>
+                        <div class="card__panel">
+                            <div class="card__overlay">
+                                COWORKING SPACE
+                            </div>
+                            <h3>ESDIP Berlin</h3>
+                            <p>ESDIP Berlin is a coworking space and an art school in Friedrichshain.</p>
+                            <div class="u-flex">
+                                <span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_1.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Hot Desk</small><br>
+                                    <small><b>€ 185</b> per month</small></span>
+                                </div><span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_2.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Dedicated Desk</small><br>
+                                    <small><b>€ 245</b> per month</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
+                    <a class="" href="#/space/8">
+                    <div class="card card--list">
+                        <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/berlin/tuesday-coworking/7dcb1735957225d3853371736eca04d3-600x351.jpg&quot;);"></div>
+                        <div class="card__panel">
+                            <div class="card__overlay">
+                                COWORKING SPACE
+                            </div>
+                            <h3>Tuesday Coworking</h3>
+                            <p>Coworking Space for Individuals and Small Teams in Berlin-Schöneberg</p>
+                            <div class="u-flex">
+                                <span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_1.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Hot Desk</small><br>
+                                    <small><b>€ 165</b> per month</small></span>
+                                </div><span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_2.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Dedicated Desk</small><br>
+                                    <small><b>€ 265</b> per month</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
+                    <a class="" href="#/space/9">
+                    <div class="card card--list">
+                        <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/berlin/we-re-all-in/17310189_274651546308998_6244258056101048139_o-600x400.jpg&quot;);"></div>
+                        <div class="card__panel">
+                            <div class="card__overlay">
+                                COWORKING SPACE
+                            </div>
+                            <h3>We're All In</h3>
+                            <p>A coworking space for creative professionals in the vibrant heart of Berlin Mitte.</p>
+                            <div class="u-flex">
+                                <span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_1.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Hot Desk</small><br>
+                                    <small><b>€ 300</b> per month</small></span>
+                                </div><span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_2.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Dedicated Desk</small><br>
+                                    <small><b>€ 270</b> per month</small></span>
+                                </div><span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_5.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Private Office</small><br>
+                                    <small><b>€ 900</b> per month</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-lg-4 u-mb2">
+                    <a class="" href="#/space/7">
+                    <div class="card card--list">
+                        <div class="card__image u-mr2" style="background-image: url(&quot;https://coworking.ldaniel.eu/api/thumbs/berlin/wework-hackescher-markt/20170202_hackerscher_markt_common_areas-10-600x450.jpg&quot;);"></div>
+                        <div class="card__panel">
+                            <div class="card__overlay">
+                                BUSINESS CENTER
+                            </div>
+                            <h3>WeWork Hackescher Markt</h3>
+                            <p>WeWork Hackescher Markt puts its members in trendy Berlin Mitte</p>
+                            <div class="u-flex">
+                                <span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_2.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Dedicated Desk</small><br>
+                                    <small><b>€ 350</b> per month</small></span>
+                                </div><span class="hasTooltip"></span>
+                                <div class="badge badge--small u-mr1">
+                                    <span class="hasTooltip"><img alt="" src="images/type_5.svg" style="width: 1.5rem; margin-top: 0.25rem;"></span>
+                                </div>
+                                <div class="tooltip">
+                                    <span class="hasTooltip"><small class="u-opacity70">Private Office</small><br>
+                                    <small><b>€ 490</b> per month</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <div id="bottomspacer" style="height: 3.5rem;"></div>
+        </div>
+    </div>
+				<!-- End Dummy Content Berlin (SEO) -->
 				
 
 
