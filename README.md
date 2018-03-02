@@ -1,4 +1,4 @@
-# Coworking
+# Coworking Project
 Client for [Coworking İstanbul](http://coworkingistanbul.com/) & [Cowork Berlin](https://coworkberlin.com/)
 
 ### API
