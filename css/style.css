@@ -2597,8 +2597,7 @@ nav {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  width: 100%;
-  pointer-events: none; }
+  width: 100%; }
   @media screen and (max-width: 48em) {
     .price-box {
       bottom: 5rem;
@@ -2640,8 +2639,7 @@ nav {
     -moz-border-radius: 0.5rem;
     border-radius: 0.5rem;
     background-color: #E4E5ED;
-    list-style: none;
-    pointer-events: all; }
+    list-style: none; }
     .price-box ul li {
       display: inline-block;
       padding: 0.5rem 0;

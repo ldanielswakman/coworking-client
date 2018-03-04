@@ -8,7 +8,7 @@
   justify-content: center;
   width: 100%;
 
-  pointer-events: none;
+  // pointer-events: none;
 
 
   @include tabletAndDown() {
@@ -46,7 +46,7 @@
     background-color: $greylighter;
     list-style: none;
 
-    pointer-events: all;
+    // pointer-events: all;
 
     li {
       display: inline-block;
