@@ -60,7 +60,7 @@ Vue.component('workspaces-prices', {
       n_counted = 0;
       ws_total = 0;
       avg_prefix = '<b>'; // <small class="u-opacity30"><small>AVG. </small></small>
-      avg_suffix = '</b><br><span>per ' + time + '</span>';
+      avg_suffix = '</b><br><span>p. ' + time + '</span>';
 
       // Find where 
       for(i in data) {

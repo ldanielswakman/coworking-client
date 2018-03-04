@@ -2498,7 +2498,7 @@ nav {
   z-index: 6; }
   nav .nav__left,
   nav .nav__right {
-    flex-basis: calc(50% - 15.5rem); }
+    flex-basis: calc(50% - 17.5rem); }
   nav .nav__left {
     display: flex; }
     nav .nav__left .logo {
@@ -2597,7 +2597,8 @@ nav {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  pointer-events: none; }
   @media screen and (max-width: 48em) {
     .price-box {
       bottom: 5rem;
@@ -2612,7 +2613,8 @@ nav {
       transition: all 0.3s ease;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
-      -ms-overflow-style: -ms-autohiding-scrollbar; }
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      pointer-events: all; }
       .price-box:before {
         content: "";
         position: fixed;
@@ -2639,7 +2641,18 @@ nav {
     -moz-border-radius: 0.5rem;
     border-radius: 0.5rem;
     background-color: #E4E5ED;
-    list-style: none; }
+    list-style: none;
+    pointer-events: all; }
+    .price-box ul:before {
+      content: "AVERAGES";
+      position: absolute;
+      top: 0;
+      left: 0.5rem;
+      font-size: 0.5rem;
+      font-weight: bold;
+      letter-spacing: 0.03rem;
+      line-height: 1.5rem;
+      opacity: 0.2; }
     .price-box ul li {
       display: inline-block;
       padding: 0.5rem 0;
@@ -2662,7 +2675,7 @@ nav {
         .price-box ul li.isActive .price-label {
           display: block; }
       .price-box ul li + li {
-        margin-left: 5rem; }
+        margin-left: 4rem; }
     @media screen and (min-width: 48em) {
       .price-box ul {
         top: -1rem; } }
@@ -2726,9 +2739,12 @@ nav {
     -webkit-box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.1);
     -moz-box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.1); }
+  .price-label b {
+    white-space: nowrap; }
   .price-label span {
     font-size: 0.75rem;
-    white-space: nowrap; }
+    white-space: nowrap;
+    opacity: 0.7; }
 
 .spaces-list {
   position: relative;

@@ -366,7 +366,7 @@ Vue.component('workspaces-prices', {
       n_counted = 0;
       ws_total = 0;
       avg_prefix = '<b>'; // <small class="u-opacity30"><small>AVG. </small></small>
-      avg_suffix = '</b><br><span>per ' + time + '</span>';
+      avg_suffix = '</b><br><span>p. ' + time + '</span>';
 
       // Find where 
       for(i in data) {
@@ -819,7 +819,7 @@ var app = new Vue({
 			{ id: 0, name: 'All' },
 			{ id: 1, name: 'Hot Desk' },
 			{ id: 3, name: 'Flex Desk' },
-			{ id: 2, name: 'Dedicated Desk' },
+			{ id: 2, name: 'Fixed Desk' },
 			{ id: 5, name: 'Private Office' },
 			// { id: 6, name: 'Conference Room' },
 			// { id: 7, name: 'Meeting Room' },

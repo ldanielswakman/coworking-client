@@ -133,7 +133,7 @@ var app = new Vue({
 			{ id: 0, name: 'All' },
 			{ id: 1, name: 'Hot Desk' },
 			{ id: 3, name: 'Flex Desk' },
-			{ id: 2, name: 'Dedicated Desk' },
+			{ id: 2, name: 'Fixed Desk' },
 			{ id: 5, name: 'Private Office' },
 			// { id: 6, name: 'Conference Room' },
 			// { id: 7, name: 'Meeting Room' },
