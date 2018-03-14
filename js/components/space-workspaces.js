@@ -15,9 +15,13 @@ Vue.component('space-workspaces', {
 
             <div class="col-xs-9 col-sm-12 u-mb4">
               <h4>{{ ws.type }}</h4>
+              
+              <span v-if="ws.ws_type_id == 1" class="u-text-15x c-themeblue">{{ getPrice(ws.price_day) }}</span>
+              <p v-if="ws.ws_type_id == 1" class="u-mv0 u-opacity50"><small>per day</small></p>
 
-              <span class="u-text-15x c-themeblue">{{ getPrice(ws.price_month) }}</span>
-              <p class="u-mv0 u-opacity50"><small>per month</small></p>
+              <span v-if="ws.ws_type_id != 1" class="u-text-15x c-themeblue">{{ getPrice(ws.price_month) }}</span>
+              <p v-if="ws.ws_type_id != 1" class="u-mv0 u-opacity50"><small>per month</small></p>
+
             </div>
           </div>
 

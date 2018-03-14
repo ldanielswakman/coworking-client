@@ -46,7 +46,9 @@ var SpacesDetail = Vue.component('spaces-detail', {
             <div class="row row--nopadding">
               <div v-for="item in spaceAmenities" class="col-xs-6 col-sm-4 col-lg-3 u-mb4 u-lineheight2">
                 {{ item.amenity }}
-                <p v-if="item.description" class="u-lineheight2 u-pr2"><small>{{ item.description }}</small></p>
+                <p class="u-lineheight2 u-pr2">
+                  <small v-if="item.type =='paid'">Paid</small><span v-if="item.type =='paid' && item.description">, </span><small v-if="item.description">{{ item.description }}</small>
+                </p>
               </div>
             </div>
 
