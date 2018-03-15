@@ -3,26 +3,35 @@ var SpacesDetail = Vue.component('spaces-detail', {
   template: `
     <div class="main">
 
-      <app-nav v-bind:indexPage="false"></app-nav>
+      <app-nav :indexPage="false"></app-nav>
 
       <div class="space-detail">
 
-        <space-gallery v-bind:spaceGallery="spaceGallery" v-bind:spaceName="space.name"></space-gallery>
+        <space-gallery :spaceGallery="spaceGallery" :spaceName="space.name"></space-gallery>
 
         <div class="card card--comfy">
           <div class="card__panel card-zigzag--left u-relative u-z2">
 
-            <a :href="googlePlace.url" v-if="googlePlace.rating" class="u-floatright u-mt2 u-ph1 bg-greylightest" style="border-radius: 0.5rem;" target="_blank">
-              <blockquote class="c-greylight"><i class="ti ti-star u-mr1"></i><span class="c-themeblue" style="font-size: 1.5rem;">{{ googlePlace.rating }}</span>/5.0</blockquote>
-            </a>
+            <router-link
+              :to="{ hash: 'reviews' }"
+              v-if="googlePlace.rating"
+              class="pill u-floatright u-mt2">
+
+              <blockquote class="c-greylight">
+                <i class="ti ti-star u-mr1"></i>
+                <span class="c-themeblue" style="font-size: 1.5rem;">{{ googlePlace.rating }}</span>/5.0
+              </blockquote>
+            </router-link>
 
             <h1 class="u-mv2">{{ space.title }}</h1>
 
-            <i class="ti ti-map-alt ti-15x u-mr1"></i> {{ space.address }}<span v-if="space.address">, </span>{{ space.address2 }}<span v-if="space.address2">, </span>{{ space.neighborhood }}<span v-if="space.neighborhood">, </span>{{ space.city }}
-
-            <p>{{ space.ws_type_id }}</p>
+            <a :href="mapURL" target="_blank">
+              <i class="ti ti-map-alt ti-15x u-mr1"></i> {{ space.address }}<span v-if="space.address2">, </span>{{ space.address2 }}<span v-if="space.neighborhood">, </span>{{ space.neighborhood }}<span v-if="space.city">, </span>{{ space.city }}
+            </a>
 
             <p class="u-mr4">{{ space.description }}</p>
+
+            <space-openinghours :googlePlace="googlePlace"></space-openinghours>
 
             <div class="card__actions u-mt4 u-mb2 u-aligncenter">
               <router-link
@@ -32,12 +41,12 @@ var SpacesDetail = Vue.component('spaces-detail', {
                 <i class="ti ti-comment"></i> Reviews
               </router-link>
               <a :href="linkify(space.website)" class="button button--outline" target="_blank">Website <i class="ti ti-share"></i></a>
-              <a :href="space.URL" button class="button button--dark" target="_blank">Book a Space</a>
+              <a :href="linkify(space.book_url)" button class="button button--dark" target="_blank">Book a Space</a>
             </div>
 
           </div>
 
-          <space-workspaces v-bind:space="space"></space-workspaces>
+          <space-workspaces :space="space"></space-workspaces>
 
           <div class="card__panel card-zigzag--left u-relative u-z2 u-pb0">
 
@@ -54,7 +63,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
 
           </div>
 
-          <space-reviews v-bind:googlePlace="googlePlace" v-bind:googleReviewURL="googleReviewURL"></space-reviews>
+          <space-reviews :googlePlace="googlePlace" :googleReviewURL="googleReviewURL"></space-reviews>
 
         </div>
 
@@ -103,7 +112,15 @@ var SpacesDetail = Vue.component('spaces-detail', {
       if(this.googlePlaceID && this.googlePlaceID.length > 0) {
         return 'https://search.google.com/local/writereview?placeid=' + this.googlePlaceID;
       }
-    }
+    },
+
+    mapURL() {
+      mapurl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(space.address);
+      if(this.googlePlaceID) {
+        mapurl = 'http://maps.google.com/maps/place?cid=' + this.googlePlaceID;
+      }
+      return mapurl;
+    },
   },
 
   mounted() {
@@ -140,7 +157,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
         place_response => this.googlePlace = place_response.data.response.result
       );
 
-    }
+    },
 
   },
 });

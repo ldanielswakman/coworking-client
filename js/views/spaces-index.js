@@ -133,7 +133,8 @@ var SpacesIndex = Vue.component('spaces-index', {
     },
 
     clickOnMap(id) {
-      router.push({ path: '/' + this.$root.location.name + '/' + id })
+      // this.$root.location.name
+      router.push({ path: '/space/' + id })
     },
 
     setWorkspaceFilter(id) {

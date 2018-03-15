@@ -139,6 +139,91 @@ Vue.component('space-item', {
   }
 }); 
 
+Vue.component('space-openinghours', {
+
+  props: ['googlePlace'],
+
+  template: `
+    <p class="u-mr4 u-mt2 u-opacity50">
+      <span v-if="openingHours.text" v-html="openingHours.text"></span>
+      <small v-if="openingHours.open_now" class="pill pill-greylighter u-ml1">
+        <span class="pill__status pill__status--green"></span>
+        <strong>OPEN NOW</strong>
+      </small>
+    </p>
+  `,
+
+  data() {
+    return {
+      weekdays: [ 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    }
+  },
+
+  computed: {
+
+    openingHours() {
+      output = {
+        'open_now': false,
+        'text': '',
+      };
+
+      if(this.googlePlace.opening_hours) {
+
+        opening_hours = this.googlePlace.opening_hours;
+        output.open_now = opening_hours.open_now;
+        output.text = '';
+
+        for(i in opening_hours.periods) {
+          // day parameters
+          current = {
+            'day': opening_hours.periods[i].open.day - 1,
+            'open_time': opening_hours.periods[i].open.time,
+            'close_time': opening_hours.periods[i].close.time,
+          };
+
+          // initiate sequence on first day
+          if(i == 0) { seq_start = current }
+
+          // When detecting sequence interruption, build output of sequence and reset
+          if(current.open_time !== seq_start.open_time || current.close_time !== seq_start.close_time) {
+            output.text += this.outputOpeningHourSequence(seq_start, current.day - 1);
+            output.text += ', ';
+
+            seq_start = current;
+          }
+        }
+
+        // Build final output
+        output.text += this.outputOpeningHourSequence(seq_start, current.day);
+      }
+      return output;
+    },
+
+  },
+
+  methods: {
+
+    outputOpeningHourSequence(seq_start, ref_day) {
+
+      if(parseInt(seq_start.open_time) <= 0 && parseInt(seq_start.close_time) <= 0) {
+        return '';
+      }
+
+      string = this.weekdays[seq_start.day];
+      if(seq_start.day < ref_day) { string += '-' + this.weekdays[ref_day]; }
+      string += ' ';
+      string += parseInt(seq_start.open_time)/100;
+      string += '—';
+      string += parseInt(seq_start.close_time)/100;
+      string += 'h';
+
+      return string;
+    }
+
+  }
+  
+});
+
 Vue.component('space-reviews', {
   props: ['googlePlace', 'googleReviewURL'],
   template: `
@@ -400,26 +485,35 @@ var SpacesDetail = Vue.component('spaces-detail', {
   template: `
     <div class="main">
 
-      <app-nav v-bind:indexPage="false"></app-nav>
+      <app-nav :indexPage="false"></app-nav>
 
       <div class="space-detail">
 
-        <space-gallery v-bind:spaceGallery="spaceGallery" v-bind:spaceName="space.name"></space-gallery>
+        <space-gallery :spaceGallery="spaceGallery" :spaceName="space.name"></space-gallery>
 
         <div class="card card--comfy">
           <div class="card__panel card-zigzag--left u-relative u-z2">
 
-            <a :href="googlePlace.url" v-if="googlePlace.rating" class="u-floatright u-mt2 u-ph1 bg-greylightest" style="border-radius: 0.5rem;" target="_blank">
-              <blockquote class="c-greylight"><i class="ti ti-star u-mr1"></i><span class="c-themeblue" style="font-size: 1.5rem;">{{ googlePlace.rating }}</span>/5.0</blockquote>
-            </a>
+            <router-link
+              :to="{ hash: 'reviews' }"
+              v-if="googlePlace.rating"
+              class="pill u-floatright u-mt2">
+
+              <blockquote class="c-greylight">
+                <i class="ti ti-star u-mr1"></i>
+                <span class="c-themeblue" style="font-size: 1.5rem;">{{ googlePlace.rating }}</span>/5.0
+              </blockquote>
+            </router-link>
 
             <h1 class="u-mv2">{{ space.title }}</h1>
 
-            <i class="ti ti-map-alt ti-15x u-mr1"></i> {{ space.address }}<span v-if="space.address">, </span>{{ space.address2 }}<span v-if="space.address2">, </span>{{ space.neighborhood }}<span v-if="space.neighborhood">, </span>{{ space.city }}
-
-            <p>{{ space.ws_type_id }}</p>
+            <a :href="mapURL" target="_blank">
+              <i class="ti ti-map-alt ti-15x u-mr1"></i> {{ space.address }}<span v-if="space.address2">, </span>{{ space.address2 }}<span v-if="space.neighborhood">, </span>{{ space.neighborhood }}<span v-if="space.city">, </span>{{ space.city }}
+            </a>
 
             <p class="u-mr4">{{ space.description }}</p>
+
+            <space-openinghours :googlePlace="googlePlace"></space-openinghours>
 
             <div class="card__actions u-mt4 u-mb2 u-aligncenter">
               <router-link
@@ -429,12 +523,12 @@ var SpacesDetail = Vue.component('spaces-detail', {
                 <i class="ti ti-comment"></i> Reviews
               </router-link>
               <a :href="linkify(space.website)" class="button button--outline" target="_blank">Website <i class="ti ti-share"></i></a>
-              <a :href="space.URL" button class="button button--dark" target="_blank">Book a Space</a>
+              <a :href="linkify(space.book_url)" button class="button button--dark" target="_blank">Book a Space</a>
             </div>
 
           </div>
 
-          <space-workspaces v-bind:space="space"></space-workspaces>
+          <space-workspaces :space="space"></space-workspaces>
 
           <div class="card__panel card-zigzag--left u-relative u-z2 u-pb0">
 
@@ -451,7 +545,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
 
           </div>
 
-          <space-reviews v-bind:googlePlace="googlePlace" v-bind:googleReviewURL="googleReviewURL"></space-reviews>
+          <space-reviews :googlePlace="googlePlace" :googleReviewURL="googleReviewURL"></space-reviews>
 
         </div>
 
@@ -500,7 +594,15 @@ var SpacesDetail = Vue.component('spaces-detail', {
       if(this.googlePlaceID && this.googlePlaceID.length > 0) {
         return 'https://search.google.com/local/writereview?placeid=' + this.googlePlaceID;
       }
-    }
+    },
+
+    mapURL() {
+      mapurl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(space.address);
+      if(this.googlePlaceID) {
+        mapurl = 'http://maps.google.com/maps/place?cid=' + this.googlePlaceID;
+      }
+      return mapurl;
+    },
   },
 
   mounted() {
@@ -537,7 +639,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
         place_response => this.googlePlace = place_response.data.response.result
       );
 
-    }
+    },
 
   },
 });
@@ -677,7 +779,8 @@ var SpacesIndex = Vue.component('spaces-index', {
     },
 
     clickOnMap(id) {
-      router.push({ path: '/' + this.$root.location.name + '/' + id })
+      // this.$root.location.name
+      router.push({ path: '/space/' + id })
     },
 
     setWorkspaceFilter(id) {

@@ -2255,6 +2255,24 @@ a.card {
   to {
     transform: rotate(-360deg); } }
 
+.pill {
+  display: inline-block;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #F5F5F7; }
+  .pill.pill-greylighter {
+    background-color: #E4E5ED;
+    color: #6a6f97 !important; }
+  .pill .pill__status {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #CED1E0; }
+    .pill .pill__status.pill__status--green {
+      background: #25c1a7; }
+
 .tooltip {
   position: absolute;
   left: 0;
