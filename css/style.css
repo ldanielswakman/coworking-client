@@ -2809,11 +2809,12 @@ nav {
   -webkit-transform: translateY(50vh);
   -moz-transform: translateY(50vh);
   transform: translateY(50vh); }
-  .splash-dialog:before {
+  .splash-dialog .splash-dialog__mask {
     content: "";
     position: absolute;
     bottom: 100%;
     left: 0;
+    display: block;
     width: 100vw;
     height: 100vh;
     background: rgba(48, 55, 107, 0.4);
@@ -2828,8 +2829,11 @@ nav {
     -moz-transform: translateY(0);
     transform: translateY(0);
     pointer-events: all; }
-    .splash-dialog.isVisible:before {
-      opacity: 1; }
+    .splash-dialog.isVisible .splash-dialog__mask {
+      opacity: 1;
+      cursor: pointer;
+      cursor: s-resize;
+      pointer-events: all; }
   @media screen and (max-width: 48em) {
     .splash-dialog {
       padding-bottom: calc(2vw + 13rem); } }

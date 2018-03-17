@@ -363,20 +363,21 @@ Vue.component('spaces-map', {
 
 Vue.component('splash-dialog', {
   template: `
-  <div class="splash-dialog" :class="{ isVisible: isVisible }" @click="isVisible = false">
+    <div class="splash-dialog" :class="{ isVisible: isVisible }" @click="isVisible = false">
+      <a @click="$root.splashVisible = false" class="splash-dialog__mask"></a>
 
-      <img v-bind:src="'images/logo-' + $root.location.name + '.svg'" v-bind:alt="'Coworking ' + $root.location.displayName" style="height: 3rem;" />
+      <img :src="'images/logo-' + $root.location.name + '.svg'" :alt="'Coworking ' + $root.location.displayName" style="height: 3rem;" />
 
-      <h3 class="u-mb3 u-mt3"><blockquote v-html="message"></blockquote></h3>
+      <h3 class="u-mb3 u-mt3"><span v-html="$root.splashVisible"></span><blockquote v-html="message"></blockquote></h3>
 
-      <button class="button button--theme" @click="isVisible = false">Show Spaces</button>
+      <button class="button button--theme" @click="$root.splashVisible = false">Show Spaces</button>
 
     </div>
   `,
 
   data() {
     return {
-      isVisible: true
+      isVisible: this.$root.splashVisible
     }
   },
 
@@ -388,7 +389,7 @@ Vue.component('splash-dialog', {
 
   mounted() {
     var self = this;
-    setTimeout(function() { self.isVisible = false; }, 3000);
+    // setTimeout(function() { self.isVisible = false; }, 3000);
   }
 
 }); 
@@ -824,6 +825,8 @@ var defaultConfig = {
 
 	// New Submission Form URL
 	'submitform_url': 'https://goo.gl/forms/lMnITffrCzHZCJRJ2',
+
+	'splashVisible': true,
 	
 };
 
@@ -917,6 +920,7 @@ var app = new Vue({
 		apiURL: config.apiURL,
 		location: config.location,
 		submitform_url: config.submitform_url,
+		splashVisible: config.splashVisible,
 		visibleTypes: [
 			{ id: 0, name: 'All' },
 			{ id: 1, name: 'Business Center' },

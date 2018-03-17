@@ -29,6 +29,8 @@ var defaultConfig = {
 
 	// New Submission Form URL
 	'submitform_url': 'https://goo.gl/forms/lMnITffrCzHZCJRJ2',
+
+	'splashVisible': true,
 	
 };
 
@@ -122,6 +124,7 @@ var app = new Vue({
 		apiURL: config.apiURL,
 		location: config.location,
 		submitform_url: config.submitform_url,
+		splashVisible: config.splashVisible,
 		visibleTypes: [
 			{ id: 0, name: 'All' },
 			{ id: 1, name: 'Business Center' },
