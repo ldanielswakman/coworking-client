@@ -368,7 +368,7 @@ Vue.component('splash-dialog', {
 
       <img :src="'images/logo-' + $root.location.name + '.svg'" :alt="'Coworking ' + $root.location.displayName" style="height: 3rem;" />
 
-      <h3 class="u-mb3 u-mt3"><span v-html="$root.splashVisible"></span><blockquote v-html="message"></blockquote></h3>
+      <h3 class="u-mb3 u-mt3"><blockquote v-html="message"></blockquote></h3>
 
       <button class="button button--theme" @click="$root.splashVisible = false">Show Spaces</button>
 
@@ -389,7 +389,7 @@ Vue.component('splash-dialog', {
 
   mounted() {
     var self = this;
-    // setTimeout(function() { self.isVisible = false; }, 3000);
+    setTimeout(function() { self.isVisible = false; }, 8000);
   }
 
 }); 
