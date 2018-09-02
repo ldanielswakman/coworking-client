@@ -41,6 +41,22 @@ var AppNav = Vue.component('app-nav', {
   }
 });
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    // get site base URL
+    // base_url = document.querySelectorAll('[rel]').attr('href').replace('manifest.json', '');
+    base_url = '';
+    
+    navigator.serviceWorker.register(base_url + 'sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+
 Vue.component('space-gallery', {
   props: ['spaceGallery', 'spaceName'],
   components: {
@@ -515,6 +531,8 @@ var SpacesDetail = Vue.component('spaces-detail', {
             <p class="u-mr4">{{ space.description }}</p>
 
             <space-openinghours :googlePlace="googlePlace"></space-openinghours>
+
+            <p v-if="space.free_trial_day && space.free_trial_day == '1'" class="u-mr4 u-mt2 u-opacity50">Has free trial day</p>            
 
             <div class="card__actions u-mt4 u-mb2 u-aligncenter">
               <router-link

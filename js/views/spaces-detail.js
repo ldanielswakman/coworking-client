@@ -33,6 +33,8 @@ var SpacesDetail = Vue.component('spaces-detail', {
 
             <space-openinghours :googlePlace="googlePlace"></space-openinghours>
 
+            <p v-if="space.free_trial_day && space.free_trial_day == '1'" class="u-mr4 u-mt2 u-opacity50">Has free trial day</p>            
+
             <div class="card__actions u-mt4 u-mb2 u-aligncenter">
               <router-link
                 :to="{ hash: 'reviews' }"

@@ -1,0 +1,15 @@
+{
+  "short_name": "Coworking",
+  "name": "The Coworking Project",
+  "description": "The Coworking Project is the easiest path to all of Berlin's coworking spaces.",
+  "icons": [
+    {
+      "src": "images/app-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./?homescreen=1",
+  "display": "standalone",
+  "background_color": "#fbe370"
+}
