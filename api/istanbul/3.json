@@ -1,0 +1,54 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Habita",
+    "type": "3",
+    "address": "Yeşilce Mahallesi Ulubaş Cad No:23 Kat:2, 34418 Kağıthane, Istanbul",
+    "description": "A funky industrial atmosphere pervades the space of habita sitting in exotic Istanbul, Turkey.",
+    "tags": "",
+    "book_url": "https://www.coworker.com/turkey/istanbul/habita",
+    "website": "http://www.habita.com.tr/en",
+    "image": {
+      "medium": "api/istanbul/thumbs/habita/habita-600x300.jpg",
+      "thumb": "api/istanbul/thumbs/habita/habita-180x90.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "30",
+        "price_month": "590"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": ""
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "",
+        "price_month": ""
+      }
+    ],
+    "amenities": [
+      {
+        "amenity_id": "1",
+        "amenity": "Catering Available",
+        "description": "",
+        "type": "free"
+      }
+    ],
+    "google_place_id": "ChIJe68XEn-2yhQRwvgryUbxnM4",
+    "slug": "habita",
+    "id": 3,
+    "location": {
+      "lat": 41.0973029999999965866663842462003231048583984375,
+      "lng": 29.001283300000000764384822105057537555694580078125
+    }
+  }
+}

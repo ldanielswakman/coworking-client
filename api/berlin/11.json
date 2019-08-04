@@ -1,0 +1,136 @@
+{
+    "status":
+    {
+        "code": 200,
+        "message": "OK"
+    },
+    "response":
+    {
+        "title": "Impact Hub Berlin",
+        "type": "3",
+        "google_place_id": "ChIJ5QJTPStQqEcR7kpXyAjxhMQ",
+        "address": "Friedrichstraße 246, 10969 Berlin",
+        "description": "Global community, consultancy and creative space.",
+        "tags": "social",
+        "website": "https://berlin.impacthub.net/",
+        "book_url": "https://berlin.impacthub.net/join-impact-hub/",
+        "image":
+        {
+            "medium": "api/berlin/thumbs/impact-hub-berlin/hub-461-600x600.jpg",
+            "thumb": "api/berlin/thumbs/impact-hub-berlin/hub-461-180x180.jpg"
+        },
+        "gallery":
+        [
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/11-impact-hub-berlin/hub-461.jpg",
+                "large": "api/berlin/thumbs/impact-hub-berlin/hub-461-768x768.jpg",
+                "medium": "api/berlin/thumbs/impact-hub-berlin/hub-461-600x600.jpg",
+                "thumb": "api/berlin/thumbs/impact-hub-berlin/hub-461-180x180.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/11-impact-hub-berlin/ihb_people.jpg",
+                "large": "api/berlin/thumbs/impact-hub-berlin/ihb_people-1000x362.jpg",
+                "medium": "api/berlin/thumbs/impact-hub-berlin/ihb_people-600x217.jpg",
+                "thumb": "api/berlin/thumbs/impact-hub-berlin/ihb_people-180x65.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/11-impact-hub-berlin/focused-area.jpg",
+                "large": "api/berlin/thumbs/impact-hub-berlin/focused-area-815x540.jpg",
+                "medium": "api/berlin/thumbs/impact-hub-berlin/focused-area-600x398.jpg",
+                "thumb": "api/berlin/thumbs/impact-hub-berlin/focused-area-180x119.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/11-impact-hub-berlin/meeting-room-768-x-540.jpg",
+                "large": "api/berlin/thumbs/impact-hub-berlin/meeting-room-768-x-540-768x540.jpg",
+                "medium": "api/berlin/thumbs/impact-hub-berlin/meeting-room-768-x-540-600x422.jpg",
+                "thumb": "api/berlin/thumbs/impact-hub-berlin/meeting-room-768-x-540-180x127.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/11-impact-hub-berlin/about1.jpg",
+                "large": "api/berlin/thumbs/impact-hub-berlin/about1-1000x357.jpg",
+                "medium": "api/berlin/thumbs/impact-hub-berlin/about1-600x214.jpg",
+                "thumb": "api/berlin/thumbs/impact-hub-berlin/about1-180x64.jpg"
+            }
+        ],
+        "workspaces":
+        [
+            {
+                "ws_type_id": "3",
+                "type": "Flex Desk",
+                "price_day": "",
+                "price_month": "195"
+            },
+            {
+                "ws_type_id": "2",
+                "type": "Dedicated Desk",
+                "price_day": "",
+                "price_month": "295"
+            }
+        ],
+        "amenities":
+        [
+            {
+                "amenity_id": "2",
+                "amenity": "Coffee/Tea/Filtered Water",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "11",
+                "amenity": "Meeting Rooms",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "4",
+                "amenity": "Shared Kitchen",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "5",
+                "amenity": "24/7 Option",
+                "description": "",
+                "type": "paid"
+            },
+            {
+                "amenity_id": "6",
+                "amenity": "Phone Booth/Room",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "7",
+                "amenity": "WiFi",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "8",
+                "amenity": "Mail Service",
+                "description": "+ €25 per month",
+                "type": "paid"
+            },
+            {
+                "amenity_id": "10",
+                "amenity": "Lockers",
+                "description": "+ €25 per month",
+                "type": "paid"
+            },
+            {
+                "amenity_id": "13",
+                "amenity": "Lounge Area",
+                "description": "",
+                "type": "free"
+            }
+        ],
+        "free_trial_day": "1",
+        "slug": "impact-hub-berlin",
+        "id": 11,
+        "location":
+        {
+            "lat": 52.5001872,
+            "lng": 13.3908008
+        }
+    }
+}

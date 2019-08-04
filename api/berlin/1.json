@@ -1,0 +1,74 @@
+{
+    "status":
+    {
+        "code": 200,
+        "message": "OK"
+    },
+    "response":
+    {
+        "title": "Factory Mitte",
+        "type": "1",
+        "google_place_id": "ChIJFzbqHPFRqEcRDC9pi8Ztqz4",
+        "address": "Rheinsberger Str. 76/77, 10115 Berlin",
+        "description": "Factory Berlin is a next generation business club, connecting innovators to build relationships that truly matter",
+        "tags": "",
+        "book_url": "",
+        "website": "http://factoryberlin.com/",
+        "image":
+        {
+            "medium": "api/berlin/thumbs/factory-mitte/aussenansicht_factory-600x400.jpg",
+            "thumb": "api/berlin/thumbs/factory-mitte/aussenansicht_factory-180x120.jpg"
+        },
+        "workspaces":
+        [
+            {
+                "ws_type_id": "3",
+                "type": "Flex Desk",
+                "price_day": "",
+                "price_month": "119"
+            }
+        ],
+        "amenities": [],
+        "gallery":
+        [
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/1-factory-mitte/aussenansicht_factory.jpg",
+                "large": "api/berlin/thumbs/factory-mitte/aussenansicht_factory-720x480.jpg",
+                "medium": "api/berlin/thumbs/factory-mitte/aussenansicht_factory-600x400.jpg",
+                "thumb": "api/berlin/thumbs/factory-mitte/aussenansicht_factory-180x120.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/1-factory-mitte/berlin-business-guide-die-besten-coworking-spaces-und-cafs-20-07-2015-14-59.jpg",
+                "large": "api/berlin/thumbs/factory-mitte/berlin-business-guide-die-besten-coworking-spaces-und-cafs-20-07-2015-14-59-1000x625.jpg",
+                "medium": "api/berlin/thumbs/factory-mitte/berlin-business-guide-die-besten-coworking-spaces-und-cafs-20-07-2015-14-59-600x375.jpg",
+                "thumb": "api/berlin/thumbs/factory-mitte/berlin-business-guide-die-besten-coworking-spaces-und-cafs-20-07-2015-14-59-180x113.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/1-factory-mitte/factory-berlin-13.jpg",
+                "large": "api/berlin/thumbs/factory-mitte/factory-berlin-13-1000x666.jpg",
+                "medium": "api/berlin/thumbs/factory-mitte/factory-berlin-13-600x399.jpg",
+                "thumb": "api/berlin/thumbs/factory-mitte/factory-berlin-13-180x120.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/1-factory-mitte/factory-berlin-9.jpg",
+                "large": "api/berlin/thumbs/factory-mitte/factory-berlin-9-1000x667.jpg",
+                "medium": "api/berlin/thumbs/factory-mitte/factory-berlin-9-600x400.jpg",
+                "thumb": "api/berlin/thumbs/factory-mitte/factory-berlin-9-180x120.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/1-factory-mitte/factory-berlin-julian-breinersdorfer-06.jpg",
+                "large": "api/berlin/thumbs/factory-mitte/factory-berlin-julian-breinersdorfer-06-815x543.jpg",
+                "medium": "api/berlin/thumbs/factory-mitte/factory-berlin-julian-breinersdorfer-06-600x400.jpg",
+                "thumb": "api/berlin/thumbs/factory-mitte/factory-berlin-julian-breinersdorfer-06-180x120.jpg"
+            }
+        ],
+        "free_trial_day": "0",
+        "slug": "factory-mitte",
+        "id": 1,
+        "location":
+        {
+            "lat": 52.5372444,
+            "lng": 13.3945356
+        }
+    }
+}

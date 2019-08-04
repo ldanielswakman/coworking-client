@@ -1,0 +1,126 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Kolektif House Levent",
+    "type": "3",
+    "google_place_id": "ChIJmXYXdGe2yhQR3vkR5tjvb5M",
+    "address": "Esentepe Mahallesi, Talatpaşa Cd. No:5, 34394 Şişli/İstanbul, Turkey",
+    "description": "In İstanbul’s financial district, we have turned an old embroidery factory into a living coworking space.",
+    "tags": "",
+    "book_url": "",
+    "website": "https://www.kolektifhouse.co/en/levent-office/",
+    "image": {
+      "medium": "api/istanbul/thumbs/kolektif-house-levent/levent-4-600x400.jpg",
+      "thumb": "api/istanbul/thumbs/kolektif-house-levent/levent-4-180x120.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "",
+        "price_month": "890"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "1500"
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "",
+        "price_month": "2900"
+      }
+    ],
+    "amenities": [
+      {
+        "amenity_id": "13",
+        "amenity": "Lounge Area",
+        "description": "Lounges specially designed for you to relax and hold your casual meetings",
+        "type": "free"
+      },
+      {
+        "amenity_id": "1",
+        "amenity": "Catering Available",
+        "description": "Contact us to learn more",
+        "type": "free"
+      },
+      {
+        "amenity_id": "2",
+        "amenity": "Coffee/Tea/Filtered Water",
+        "description": "Hot beverages and refreshments",
+        "type": "free"
+      },
+      {
+        "amenity_id": "3",
+        "amenity": "Cafe/Restaurant",
+        "description": "Find it right here!",
+        "type": "free"
+      },
+      {
+        "amenity_id": "4",
+        "amenity": "Shared Kitchen",
+        "description": "Warm up your lunch or keep it cool",
+        "type": "free"
+      },
+      {
+        "amenity_id": "5",
+        "amenity": "24/7 Option",
+        "description": "Full 24\\/7 access option available",
+        "type": "free"
+      },
+      {
+        "amenity_id": "6",
+        "amenity": "Phone Booth/Room",
+        "description": "Designated spot for your calls",
+        "type": "free"
+      },
+      {
+        "amenity_id": "7",
+        "amenity": "WiFi",
+        "description": "Reliable wireless Internet",
+        "type": "free"
+      },
+      {
+        "amenity_id": "8",
+        "amenity": "Mail Service",
+        "description": "Option to get a local address",
+        "type": "free"
+      },
+      {
+        "amenity_id": "9",
+        "amenity": "Wheelchair Accessible",
+        "description": "You can roll right in",
+        "type": "free"
+      },
+      {
+        "amenity_id": "10",
+        "amenity": "Lockers",
+        "description": "To store your stuff securely",
+        "type": "free"
+      },
+      {
+        "amenity_id": "11",
+        "amenity": "Meeting Rooms",
+        "description": "Need to book a meeting room?",
+        "type": "free"
+      },
+      {
+        "amenity_id": "12",
+        "amenity": "Pets Allowed",
+        "description": "Just let us know in advance",
+        "type": "free"
+      }
+    ],
+    "slug": "kolektif-house-levent",
+    "id": 8114,
+    "location": {
+      "lat": 41.07984660000000332047420670278370380401611328125,
+      "lng": 29.006143200000000348381945514120161533355712890625
+    }
+  }
+}

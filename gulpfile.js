@@ -18,15 +18,15 @@ gulp.task('sass', function() {
 });
 
 // Clean & minify CSS (after Sass)
-gulp.task('clean_css', ['sass'], function() {
+gulp.task('clean_css', gulp.series('sass', function() {
   gulp.src('css/style.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./css/'));
-});
+}));
 
 // Combine style tasks
-gulp.task('styles', ['sass', 'clean_css']);
+gulp.task('styles', gulp.series('sass', 'clean_css'));
 
 // Concatenate & minify JS
 gulp.task('scripts', function() {
@@ -46,9 +46,9 @@ gulp.task('scripts', function() {
 
 // Watch task
 gulp.task('default',function() {
-    gulp.watch('scss/**/*.scss',['styles']);
-    gulp.watch('js/components/**/*.js',['scripts']);
-    gulp.watch('js/views/**/*.js',['scripts']);
-    gulp.watch('js/app.js',['scripts']);
+    gulp.watch('scss/**/*.scss',gulp.series('styles'));
+    gulp.watch('js/components/**/*.js',gulp.series('scripts'));
+    gulp.watch('js/views/**/*.js',gulp.series('scripts'));
+    gulp.watch('js/app.js',gulp.series('scripts'));
 });
 

@@ -1,0 +1,105 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Mindspace Mitte",
+    "type": "3",
+    "google_place_id": "ChIJa-cbfNpRqEcR-7OtwASSiFI",
+    "address": "Friedrichstraße 68, 10117 Berlin",
+    "description": "Coworking In Berlin. Mindspace is placed in the heart of the cosmopolitan – amongst the tech giants, museums, fashion houses, and cafes, and in the midst of Berlin's thriving startup ecosystem",
+    "tags": "",
+    "book_url": "https://www.mindspace.me/mindpass/",
+    "website": "https://www.mindspace.me/berlin/",
+    "image": {
+      "medium": "api/berlin/thumbs/mindspace-mitte/5ae439dc50995f2a4f2ef6c7bd2894e8-600x390.jpg",
+      "thumb": "api/berlin/thumbs/mindspace-mitte/5ae439dc50995f2a4f2ef6c7bd2894e8-180x117.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "",
+        "price_month": "50"
+      },
+      {
+        "ws_type_id": "3",
+        "type": "Flex Desk",
+        "price_day": "",
+        "price_month": "350"
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "",
+        "price_month": "1000"
+      }
+    ],
+    "amenities": [
+      {
+        "amenity_id": "5",
+        "amenity": "24/7 Option",
+        "description": "24/7 access",
+        "type": "free"
+      },
+      {
+        "amenity_id": "7",
+        "amenity": "WiFi",
+        "description": "Super fast internet",
+        "type": "free"
+      },
+      {
+        "amenity_id": "2",
+        "amenity": "Coffee/Tea/Filtered Water",
+        "description": "Soda Fountain",
+        "type": "free"
+      },
+      {
+        "amenity_id": "2",
+        "amenity": "Coffee/Tea/Filtered Water",
+        "description": "Coffee Bar",
+        "type": "free"
+      },
+      {
+        "amenity_id": "6",
+        "amenity": "Phone Booth\\/ Room",
+        "description": "PRIVATE PHONE BOOTHS",
+        "type": "free"
+      },
+      {
+        "amenity_id": "14",
+        "amenity": "Print voucher/Yazici kullanimi",
+        "description": "",
+        "type": "paid"
+      },
+      {
+        "amenity_id": "11",
+        "amenity": "Meeting Rooms",
+        "description": "",
+        "type": "paid"
+      }
+    ],
+    "gallery": [
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/6-mindspace-mitte/5ae439dc50995f2a4f2ef6c7bd2894e8.jpg",
+        "large": "api/berlin/thumbs/mindspace-mitte/5ae439dc50995f2a4f2ef6c7bd2894e8-922x600.jpg",
+        "medium": "api/berlin/thumbs/mindspace-mitte/5ae439dc50995f2a4f2ef6c7bd2894e8-600x390.jpg",
+        "thumb": "api/berlin/thumbs/mindspace-mitte/5ae439dc50995f2a4f2ef6c7bd2894e8-180x117.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/6-mindspace-mitte/berlin_pic.jpg",
+        "large": "api/berlin/thumbs/mindspace-mitte/berlin_pic-699x512.jpg",
+        "medium": "api/berlin/thumbs/mindspace-mitte/berlin_pic-600x439.jpg",
+        "thumb": "api/berlin/thumbs/mindspace-mitte/berlin_pic-180x132.jpg"
+      }
+    ],
+    "free_trial_day": "0",
+    "slug": "mindspace-mitte",
+    "id": 5,
+    "location": {
+      "lat": 52.51222949999999656256477464921772480010986328125,
+      "lng": 13.388020600000000825957613415084779262542724609375
+    }
+  }
+}

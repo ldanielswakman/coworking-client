@@ -1,0 +1,45 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Enklave",
+    "type": "3",
+    "google_place_id": "ChIJW2SP7L1PqEcRGoy-LO9h8xk",
+    "address": "Kienitzer Str. 100, 12049 Berlin",
+    "description": "Low-cost coworking space for community loving freelancers and start-ups in Berlin Neukölln",
+    "tags": "",
+    "book_url": "",
+    "website": "http://www.enklave.de/",
+    "image": {
+      "medium": "api/berlin/thumbs/enklave/workspace-600x363.jpg",
+      "thumb": "api/berlin/thumbs/enklave/workspace-180x109.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "3",
+        "type": "Flex Desk",
+        "price_day": "8",
+        "price_month": "30"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "178"
+      }
+    ],
+    "amenities": [
+      
+    ],
+    "free_trial_day": "1",
+    "gallery": "",
+    "slug": "enklave",
+    "id": 2,
+    "location": {
+      "lat": 52.4760739999999969995769788511097431182861328125,
+      "lng": 13.4254400000000000403588273911736905574798583984375
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Workhaus",
+    "type": "3",
+    "address": "Dereboyu 2 Cad. Nurol Plaza 21, , 34450, Istanbul",
+    "description": "Workhaus is an office complex incorporating the entire necessary infrastructure for your comfort.",
+    "tags": "coworking,serviced office,meeting room,haz\\u0131r ofis,payla\\u015f\\u0131ml\\u0131 ofis,toplant\\u0131 odas\\u0131,hot desk,flexi,desk,coffee,tea,kahve,cafe,\\u00e7ay,metro,public transport,drop in,parking,Istanbul,Turkey,Maslak,enterpreneur,giri\\u015fimci,start up,bili\\u015fim,creative,yarat\\u0131c\\u0131",
+    "book_url": "",
+    "website": "http://www.workhaus.com.tr/",
+    "image": {
+      "medium": "api/istanbul/thumbs/workhaus/workhaus-600x429.png",
+      "thumb": "api/istanbul/thumbs/workhaus/workhaus-180x129.png"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "80",
+        "price_month": "600"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "850"
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "0",
+        "price_month": "3600"
+      }
+    ],
+    "google_place_id": "ChIJGyq7mZW1yhQRWrvzBJB5Xm4",
+    "amenities": [
+      
+    ],
+    "gallery": "",
+    "slug": "workhaus",
+    "id": 8199,
+    "location": {
+      "lat": 41.11910628999999772759110783226788043975830078125,
+      "lng": 29.02033614999999855399437365122139453887939453125
+    }
+  }
+}

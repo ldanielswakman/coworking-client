@@ -1,0 +1,76 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "betahaus",
+    "type": "3",
+    "google_place_id": "ChIJqQFHjS1OqEcR8d99mafShxY",
+    "address": "Köpenicker Str. 154, 10997 Berlin",
+    "description": "betahaus is a coworking space and community for people who want to work on their own projects while exchanging knowledge, ideas, and inspiration with others",
+    "tags": "",
+    "book_url": "https://www.betahaus.com/coworking-membership-berlin",
+    "website": "https://www.betahaus.com/",
+    "image": {
+      "medium": "api/berlin/thumbs/betahaus/7-600x400.jpg",
+      "thumb": "api/berlin/thumbs/betahaus/7-180x120.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "",
+        "price_month": ""
+      },
+      {
+        "ws_type_id": "3",
+        "type": "Flex Desk",
+        "price_day": "",
+        "price_month": "99"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "200"
+      }
+    ],
+    "amenities": [
+      
+    ],
+    "gallery": [
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/4-betahaus/7.jpg",
+        "large": "api/berlin/thumbs/betahaus/7-1000x667.jpg",
+        "medium": "api/berlin/thumbs/betahaus/7-600x400.jpg",
+        "thumb": "api/berlin/thumbs/betahaus/7-180x120.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/4-betahaus/592560a501df07424a7ce80d_coworking1-slider2.jpg",
+        "large": "api/berlin/thumbs/betahaus/592560a501df07424a7ce80d_coworking1-slider2-1000x536.jpg",
+        "medium": "api/berlin/thumbs/betahaus/592560a501df07424a7ce80d_coworking1-slider2-600x321.jpg",
+        "thumb": "api/berlin/thumbs/betahaus/592560a501df07424a7ce80d_coworking1-slider2-180x96.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/4-betahaus/592567ef5ba7ec4e53d797e1_coworking3-slider.jpg",
+        "large": "api/berlin/thumbs/betahaus/592567ef5ba7ec4e53d797e1_coworking3-slider-1000x666.jpg",
+        "medium": "api/berlin/thumbs/betahaus/592567ef5ba7ec4e53d797e1_coworking3-slider-600x400.jpg",
+        "thumb": "api/berlin/thumbs/betahaus/592567ef5ba7ec4e53d797e1_coworking3-slider-180x120.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/4-betahaus/59257d3dff1fae220896209f_cafe-slider2.jpg",
+        "large": "api/berlin/thumbs/betahaus/59257d3dff1fae220896209f_cafe-slider2-1000x667.jpg",
+        "medium": "api/berlin/thumbs/betahaus/59257d3dff1fae220896209f_cafe-slider2-600x400.jpg",
+        "thumb": "api/berlin/thumbs/betahaus/59257d3dff1fae220896209f_cafe-slider2-180x120.jpg"
+      }
+    ],
+    "free_trial_day": "1",
+    "slug": "betahaus",
+    "id": 3,
+    "location": {
+      "lat": 52.505576300000001310763764195144176483154296875,
+      "lng": 13.4307806999999996833139448426663875579833984375
+    }
+  }
+}

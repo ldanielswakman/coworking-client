@@ -1,0 +1,171 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Kamara",
+    "type": "1",
+    "google_place_id": "ChIJ6aRpv-TGyhQR0kL4phRYlN8",
+    "address": "Altıntepe Mh, İstasyon Yolu Sokağı No:3, 34840 Maltepe/İstanbul, Turkey",
+    "description": "Kamara's serviced offices, virtual offices and co-working spaces has attracted everyone ranging from new entrepreneurs to corporate firms",
+    "tags": "",
+    "website": "https://kamara.com.tr/en/",
+    "book_url": "",
+    "image": {
+      "medium": "api/istanbul/thumbs/kamara/anasayfa-3-600x417.jpg",
+      "thumb": "api/istanbul/thumbs/kamara/anasayfa-3-180x125.jpg"
+    },
+    "gallery": [
+      {
+        "original": "http://localhost/coworking-api/api/content/1-istanbul/8-kamara/anasayfa-3.jpg",
+        "large": "api/istanbul/thumbs/kamara/anasayfa-3-726x505.jpg",
+        "medium": "api/istanbul/thumbs/kamara/anasayfa-3-600x417.jpg",
+        "thumb": "api/istanbul/thumbs/kamara/anasayfa-3-180x125.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/1-istanbul/8-kamara/anasayfa-1.jpg",
+        "large": "api/istanbul/thumbs/kamara/anasayfa-1-726x505.jpg",
+        "medium": "api/istanbul/thumbs/kamara/anasayfa-1-600x417.jpg",
+        "thumb": "api/istanbul/thumbs/kamara/anasayfa-1-180x125.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/1-istanbul/8-kamara/anasayfa-5.jpg",
+        "large": "api/istanbul/thumbs/kamara/anasayfa-5-726x505.jpg",
+        "medium": "api/istanbul/thumbs/kamara/anasayfa-5-600x417.jpg",
+        "thumb": "api/istanbul/thumbs/kamara/anasayfa-5-180x125.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/1-istanbul/8-kamara/anasayfa-2.jpg",
+        "large": "api/istanbul/thumbs/kamara/anasayfa-2-726x505.jpg",
+        "medium": "api/istanbul/thumbs/kamara/anasayfa-2-600x417.jpg",
+        "thumb": "api/istanbul/thumbs/kamara/anasayfa-2-180x125.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/1-istanbul/8-kamara/anasayfa-4.jpg",
+        "large": "api/istanbul/thumbs/kamara/anasayfa-4-726x505.jpg",
+        "medium": "api/istanbul/thumbs/kamara/anasayfa-4-600x417.jpg",
+        "thumb": "api/istanbul/thumbs/kamara/anasayfa-4-180x125.jpg"
+      }
+    ],
+    "free_trial_day": "1",
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "30",
+        "price_month": ""
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "500"
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "",
+        "price_month": "1000"
+      }
+    ],
+    "amenities": [
+      {
+        "amenity_id": "2",
+        "amenity": "Coffee/Tea/Filtered Water",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "3",
+        "amenity": "Cafe/Restaurant",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "4",
+        "amenity": "Shared Kitchen",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "5",
+        "amenity": "24/7 Option",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "6",
+        "amenity": "Phone Booth\\/ Room",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "7",
+        "amenity": "WiFi",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "8",
+        "amenity": "Mail Service",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "9",
+        "amenity": "Wheelchair Accessible",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "10",
+        "amenity": "Lockers",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "11",
+        "amenity": "Meeting Rooms",
+        "description": "",
+        "type": "paid"
+      },
+      {
+        "amenity_id": "12",
+        "amenity": "Pets Allowed",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "13",
+        "amenity": "Lounge Area",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "14",
+        "amenity": "Print voucher/Yazici kullanimi",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "15",
+        "amenity": "Virtual Office/Sanal Ofis",
+        "description": "",
+        "type": "paid"
+      },
+      {
+        "amenity_id": "16",
+        "amenity": "Communication Package/Iletisim Paketi",
+        "description": "",
+        "type": "free"
+      }
+    ],
+    "slug": "kamara",
+    "id": 5,
+    "location": {
+      "lat": 40.952338400000002138767740689218044281005859375,
+      "lng": 29.09623189999999937072061584331095218658447265625
+    }
+  }
+}

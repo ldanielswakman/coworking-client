@@ -1,0 +1,81 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "WeWork Hackescher Markt",
+    "type": "1",
+    "google_place_id": "ChIJ36rQp-FRqEcRSms_pIsp3EY",
+    "address": "Neue Schönhauser Str. 3-5, 10178 Berlin",
+    "description": "WeWork Hackescher Markt puts its members in trendy Berlin Mitte",
+    "tags": "",
+    "book_url": "https://www.wework.com/buildings/hackescher-markt--berlin#pricing",
+    "website": "https://www.wework.com/buildings/hackescher-markt--berlin",
+    "image": {
+      "medium": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_common_areas-10-600x450.jpg",
+      "thumb": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_common_areas-10-180x135.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "430"
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "",
+        "price_month": "540"
+      }
+    ],
+    "amenities": [
+      {
+        "amenity_id": "7",
+        "amenity": "WiFi",
+        "description": "High Speed Internet",
+        "type": "free"
+      },
+      {
+        "amenity_id": "6",
+        "amenity": "Phone Booth\\/ Room",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "2",
+        "amenity": "Coffee/Tea/Filtered Water",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "12",
+        "amenity": "Pets Allowed",
+        "description": "",
+        "type": "free"
+      }
+    ],
+    "gallery": [
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/12-wework-hackescher-markt/20170202_hackerscher_markt_common_areas-10.jpg",
+        "large": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_common_areas-10-1000x750.jpg",
+        "medium": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_common_areas-10-600x450.jpg",
+        "thumb": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_common_areas-10-180x135.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/12-wework-hackescher-markt/20170202_hackerscher_markt_conference_rooms-5.jpg",
+        "large": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_conference_rooms-5-1000x600.jpg",
+        "medium": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_conference_rooms-5-600x360.jpg",
+        "thumb": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_conference_rooms-5-180x108.jpg"
+      }
+    ],
+    "free_trial_day": "0",
+    "slug": "wework-hackescher-markt",
+    "id": 7,
+    "location": {
+      "lat": 52.52473859999999916681190370582044124603271484375,
+      "lng": 13.4026523999999991332288118428550660610198974609375
+    }
+  }
+}

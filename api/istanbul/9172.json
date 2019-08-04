@@ -1,0 +1,33 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "@meeting Toplantı Organizasyon",
+    "type": "1",
+    "address": "Dereboyu Cad. Bilim Sok.  Sun Plaza  Maslak, , 34398, Istanbul",
+    "description": "",
+    "tags": "Meeting rooms,Training Sessions,workshops,conferences,virtual office,organization,room rental,meeting packages",
+    "book_url": "",
+    "website": "",
+    "image": {
+      "medium": "api/istanbul/thumbs/meeting-toplanti-organizasyon/meeting-toplanti-organizasyon-600x524.png",
+      "thumb": "api/istanbul/thumbs/meeting-toplanti-organizasyon/meeting-toplanti-organizasyon-180x157.png"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "60",
+        "price_month": "450"
+      }
+    ],
+    "slug": "meeting-toplanti-organizasyon",
+    "id": 9172,
+    "location": {
+      "lat": 41.09382629000000264340997091494500637054443359375,
+      "lng": 29.0294303900000016938065527938306331634521484375
+    }
+  }
+}

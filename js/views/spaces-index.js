@@ -112,7 +112,7 @@ var SpacesIndex = Vue.component('spaces-index', {
   mounted() {
     
     // request space data
-    axios.get(this.$root.apiURL + 'api/' + this.$root.location.name).then(
+    axios.get(this.$root.apiURL + 'api/' + this.$root.location.name + '.json').then(
       response => this.spaces = response.data.response
     );
 

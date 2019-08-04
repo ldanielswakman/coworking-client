@@ -128,7 +128,7 @@ var SpacesDetail = Vue.component('spaces-detail', {
   mounted() {
 
     // request space data
-    axios.get(this.$root.apiURL + 'api/' + this.$root.location.name + '/' + this.id).then(
+    axios.get(this.$root.apiURL + 'api/' + this.$root.location.name + '/' + this.id + '.json').then(
       response => {
         this.space = response.data.response;
         this.googlePlaceID = response.data.response.google_place_id;
@@ -155,8 +155,8 @@ var SpacesDetail = Vue.component('spaces-detail', {
       APIKey = this.$root.googleMapsAPIKey;
       PlaceDetailsURL = baseURL + '?placeid=' + placeID + '&key=' + APIKey;
 
-      axios.get(this.$root.apiURL + 'api/cors/?url=' + encodeURIComponent(PlaceDetailsURL)).then(
-        place_response => this.googlePlace = place_response.data.response.result
+      axios.get('https://cors-anywhere.herokuapp.com/' + PlaceDetailsURL).then(
+        place_response => this.googlePlace = place_response.data.result
       );
 
     },

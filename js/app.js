@@ -4,7 +4,7 @@ var defaultConfig = {
 	'env': 'production',
 
 	// API Base URL
-	'apiURL': 'https://coworking.ldaniel.eu/',
+	'apiURL': '',
 
 	// Base location (map)
 	'location': {
@@ -39,7 +39,7 @@ config = (typeof customConfig !== 'undefined') ? customConfig : defaultConfig;
 
 // if localhost, override API URL
 if(window.location.href.indexOf('localhost') !== -1) {
-	config.apiURL = 'http://localhost/coworking-api/';
+	config.apiURL = '';
 }
 
 

@@ -1,0 +1,86 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Ahoy! Berlin",
+    "type": "3",
+    "google_place_id": "ChIJPZDUWfRRqEcRHIEMEqFSkTk",
+    "address": "Wattstraße 11, 13355 Berlin, Germany",
+    "description": "We provide spaces that drive productivity and innovation. We empower our members professionally and personally",
+    "tags": "",
+    "book_url": "https://www.ahoyberlin.com/workspaces",
+    "website": "https://www.ahoyberlin.com/",
+    "image": {
+      "medium": "api/berlin/thumbs/ahoy-berlin/14-600x400.jpg",
+      "thumb": "api/berlin/thumbs/ahoy-berlin/14-180x120.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "15",
+        "price_month": ""
+      },
+      {
+        "ws_type_id": "3",
+        "type": "Flex Desk",
+        "price_day": "",
+        "price_month": "150"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "190"
+      }
+    ],
+    "amenities": [
+      {
+        "amenity_id": "3",
+        "amenity": "Cafe/Restaurant",
+        "description": "",
+        "type": "paid"
+      },
+      {
+        "amenity_id": "10",
+        "amenity": "Lockers",
+        "description": "+ €25 per month",
+        "type": "paid"
+      },
+      {
+        "amenity_id": "5",
+        "amenity": "24/7 Option",
+        "description": "+ €30 per month",
+        "type": "paid"
+      },
+      {
+        "amenity_id": "15",
+        "amenity": "Virtual Office",
+        "description": "+ €99 per month",
+        "type": "paid"
+      },
+      {
+        "amenity_id": "7",
+        "amenity": "WiFi",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "13",
+        "amenity": "Lounge Area",
+        "description": "",
+        "type": "free"
+      }
+    ],
+    "gallery": "",
+    "free_trial_day": "0",
+    "slug": "ahoy-berlin",
+    "id": 4,
+    "location": {
+      "lat": 52.54123080000000101108525996096432209014892578125,
+      "lng": 13.3905998999999997778331817244179546833038330078125
+    }
+  }
+}

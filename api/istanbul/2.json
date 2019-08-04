@@ -1,0 +1,40 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "ImpactHUB İstanbul",
+    "text": "",
+    "address": "Yeşilce Mah. Emirşah Sok. No:21, Kagıthane, Istanbul Turkey 34418",
+    "description": "Impact Hub Istanbul is a member-based co-working space and event venue that unites and empowers impact-driven individuals.",
+    "tags": "",
+    "book_url": "https://www.coworker.com/turkey/istanbul/impact-hub-istanbul",
+    "website": "http://impacthubist.net/",
+    "type": "3",
+    "image": {
+      "medium": "api/istanbul/thumbs/impacthub-istanbul/impacthubist-600x400.jpg",
+      "thumb": "api/istanbul/thumbs/impacthub-istanbul/impacthubist-180x120.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "0",
+        "price_month": "0"
+      }
+    ],
+    "google_place_id": "ChIJkxgTOny2yhQRO6ksSo3HeQI",
+    "amenities": [
+      
+    ],
+    "gallery": "",
+    "free_trial_day": "0",
+    "slug": "impacthub-istanbul",
+    "id": 2,
+    "location": {
+      "lat": 41.09327300000000349200490745715796947479248046875,
+      "lng": 29.0011310000000008813003660179674625396728515625
+    }
+  }
+}

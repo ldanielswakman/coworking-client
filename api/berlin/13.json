@@ -1,0 +1,39 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Factory Görlitzer Park",
+    "type": "1",
+    "google_place_id": "ChIJk7VJuqxPqEcR29xr6LwXVS0",
+    "address": "Lohmühlenstraße 65, 12435 Berlin",
+    "description": "Berlin’s startup ecosystem grew, and so did we. Factory Görlitzer is not only home to our thriving community, but also a meditation room, a cinema... oh and a ball pit.",
+    "tags": "",
+    "website": "https://factoryberlin.com/",
+    "book_url": "",
+    "image": {
+      "medium": "api/berlin/thumbs/factory-goerlitzer-park/gorli-600x422.jpg",
+      "thumb": "api/berlin/thumbs/factory-goerlitzer-park/gorli-180x126.jpg"
+    },
+    "gallery": "",
+    "free_trial_day": "0",
+    "workspaces": [
+      {
+        "ws_type_id": "3",
+        "type": "Flex Desk",
+        "price_day": "",
+        "price_month": "119"
+      }
+    ],
+    "amenities": [
+      
+    ],
+    "slug": "factory-goerlitzer-park",
+    "id": 13,
+    "location": {
+      "lat": 52.49402549999999934016159386374056339263916015625,
+      "lng": 13.4441472999999991344566296902485191822052001953125
+    }
+  }
+}

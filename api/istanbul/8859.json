@@ -1,0 +1,49 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Workinton",
+    "type": "1",
+    "address": "Buyukdere Caddesi, , 34000, Istanbul",
+    "description": "Workinton Levent 199 combines the location advantage with its accessibility and advanced technical infrastructure, and is up for being the meeting base of the business world.",
+    "tags": "workinton,coworking,serviced office,virtual office,private desk",
+    "book_url": "",
+    "website": "",
+    "image": {
+      "medium": "api/istanbul/thumbs/workinton/workinton-levent-600x277.jpg",
+      "thumb": "api/istanbul/thumbs/workinton/workinton-levent-180x83.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "34",
+        "price_month": "465"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "0",
+        "price_month": "750"
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "0",
+        "price_month": "4000"
+      }
+    ],
+    "google_place_id": "ChIJz2Sbzme2yhQRb6NATaoNIc0",
+    "amenities": [
+      
+    ],
+    "slug": "workinton",
+    "id": 8859,
+    "location": {
+      "lat": 41.08070373999999702618879382498562335968017578125,
+      "lng": 29.01093863999999911129634710960090160369873046875
+    }
+  }
+}

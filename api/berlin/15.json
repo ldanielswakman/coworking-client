@@ -1,0 +1,51 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Rent 24 Mitte",
+    "type": "3",
+    "google_place_id": "ChIJbQANnNlRqEcRXQws7ocDg4s",
+    "address": "Oberwallstraße 6, 10117 Berlin",
+    "description": "Located in the heart of Berlin, they have created a beautifully designed coworking and office space on more than 7.200 m2 and on 6 floors.",
+    "tags": "",
+    "website": "https://www.rent24.com/en/",
+    "book_url": "",
+    "image": {
+      "medium": "api/berlin/thumbs/rent-24-mitte/rent24-600x315.jpg",
+      "thumb": "api/berlin/thumbs/rent-24-mitte/rent24-180x95.jpg"
+    },
+    "gallery": "",
+    "free_trial_day": "0",
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "",
+        "price_month": "50"
+      },
+      {
+        "ws_type_id": "3",
+        "type": "Flex Desk",
+        "price_day": "",
+        "price_month": "199"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "299"
+      }
+    ],
+    "amenities": [
+      
+    ],
+    "slug": "rent-24-mitte",
+    "id": 15,
+    "location": {
+      "lat": 52.50369500000000044792614062316715717315673828125,
+      "lng": 13.3787386000000001473608790547586977481842041015625
+    }
+  }
+}

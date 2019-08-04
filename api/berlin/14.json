@@ -1,0 +1,48 @@
+{
+    "status":
+    {
+        "code": 200,
+        "message": "OK"
+    },
+    "response":
+    {
+        "title": "Unicorn Berlin",
+        "type": "3",
+        "google_place_id": "ChIJeXBnkfZRqEcRXV8luJ_ugws",
+        "address": "Brunnenstraße 64, 13355 Berlin",
+        "description": "Unicorn.Berlin Brunnenviertel provides high-end-coworking, meeting rooms and an event space.",
+        "tags": "",
+        "website": "https://unicorn.berlin/locations/brunnenstrasse-64-brunnenviertel/",
+        "book_url": "",
+        "image":
+        {
+            "medium": "api/berlin/thumbs/unicorn-berlin/unicorn_2_lounge_totale-1-600x450.jpg",
+            "thumb": "api/berlin/thumbs/unicorn-berlin/unicorn_2_lounge_totale-1-180x135.jpg"
+        },
+        "gallery": "",
+        "free_trial_day": "0",
+        "workspaces":
+        [
+            {
+                "ws_type_id": "3",
+                "type": "Flex Desk",
+                "price_day": "16",
+                "price_month": ""
+            },
+            {
+                "ws_type_id": "2",
+                "type": "Dedicated Desk",
+                "price_day": "",
+                "price_month": "149"
+            }
+        ],
+        "amenities": [],
+        "slug": "unicorn-berlin",
+        "id": 14,
+        "location":
+        {
+            "lat": 52.5407194,
+            "lng": 13.3945852
+        }
+    }
+}

@@ -1,0 +1,356 @@
+{
+    "status":
+    {
+        "code": 200,
+        "message": "OK"
+    },
+    "response":
+    [
+        {
+            "title": "ImpactHUB İstanbul",
+            "text": "",
+            "address": "Yeşilce Mah. Emirşah Sok. No:21, Kagıthane, Istanbul Turkey 34418",
+            "description": "Impact Hub Istanbul is a member-based co-working space and event venue that unites and empowers impact-driven individuals.",
+            "tags": "",
+            "book_url": "https://www.coworker.com/turkey/istanbul/impact-hub-istanbul",
+            "website": "http://impacthubist.net/",
+            "type": "3",
+            "image":
+            {
+                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/impacthub-istanbul/impacthubist-600x400.jpg",
+                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/impacthub-istanbul/impacthubist-180x120.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "0",
+                    "price_month": "0"
+                }
+            ],
+            "google_place_id": "ChIJkxgTOny2yhQRO6ksSo3HeQI",
+            "amenities": "",
+            "gallery": "",
+            "free_trial_day": "0",
+            "slug": "impacthub-istanbul",
+            "id": 2,
+            "location":
+            {
+                "lat": 41.093273,
+                "lng": 29.001131
+            }
+        },
+        {
+            "title": "Habita",
+            "type": "3",
+            "address": "Yeşilce Mahallesi Ulubaş Cad No:23 Kat:2, 34418 Kağıthane, Istanbul",
+            "description": "A funky industrial atmosphere pervades the space of habita sitting in exotic Istanbul, Turkey.",
+            "tags": "",
+            "book_url": "https://www.coworker.com/turkey/istanbul/habita",
+            "website": "http://www.habita.com.tr/en",
+            "image":
+            {
+                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/habita/habita-600x300.jpg",
+                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/habita/habita-180x90.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "30",
+                    "price_month": "590"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": ""
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "",
+                    "price_month": ""
+                }
+            ],
+            "amenities": "- \r\n  amenity_id: \"1\"\r\n  amenity: Catering Available\r\n  description: \"\"\r\n  type: free",
+            "google_place_id": "ChIJe68XEn-2yhQRwvgryUbxnM4",
+            "slug": "habita",
+            "id": 3,
+            "location":
+            {
+                "lat": 41.097303,
+                "lng": 29.0012833
+            }
+        },
+        {
+            "title": "Atölye İstanbul",
+            "type": "3",
+            "address": "Silahşör Cad. Birahane Sok. No: 1 Şişli, Istanbul, Turkey",
+            "description": "ATÖLYE is a diligent curator of a strong community around design, entrepreneurship and technology.",
+            "tags": "",
+            "book_url": "",
+            "website": "https://atolye.io/en/",
+            "image":
+            {
+                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/atolye-istanbul/atolye-large-600x352.jpg",
+                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/atolye-istanbul/atolye-large-180x106.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "",
+                    "price_month": ""
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": ""
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "",
+                    "price_month": ""
+                }
+            ],
+            "google_place_id": "ChIJc-EsZxe3yhQRWj_9PyYRoWA",
+            "amenities": "",
+            "slug": "atolye-istanbul",
+            "id": 4,
+            "location":
+            {
+                "lat": 41.0583979,
+                "lng": 28.9803692
+            }
+        },
+        {
+            "title": "Kolektif House Şişhane",
+            "type": "3",
+            "address": "Sadi Konuralp Cad., 34433, Istanbul",
+            "description": "We have joined the culture and arts venue IKSV in the historical Deniz Palas building, now called Nejat Eczabaşı, transforming their second floor into a living coworking space.",
+            "tags": "Coworking Space,Istanbul,Creative Space",
+            "book_url": "",
+            "website": "https://www.kolektifhouse.co/en/sishane-office/",
+            "image":
+            {
+                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/kolektif-house-sishane/kolektif-house-600x338.png",
+                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/kolektif-house-sishane/kolektif-house-180x101.png"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "29",
+                    "price_month": "490"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "0",
+                    "price_month": "790"
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "0",
+                    "price_month": "3200"
+                }
+            ],
+            "amenities": "- \r\n  amenity_id: \"13\"\r\n  amenity: Lounge Area\r\n  description: >\r\n    Lounges specially designed for you to\r\n    relax and hold your casual meetings\r\n  type: free\r\n- \r\n  amenity_id: \"5\"\r\n  amenity: 24/7 Option\r\n  description: Full 24\\/7 access option available\r\n  type: free\r\n- \r\n  amenity_id: \"3\"\r\n  amenity: Cafe/Restaurant\r\n  description: Find it right here!\r\n  type: free\r\n- \r\n  amenity_id: \"1\"\r\n  amenity: Catering Available\r\n  description: Contact us to learn more\r\n  type: free\r\n- \r\n  amenity_id: \"2\"\r\n  amenity: Coffee/Tea/Filtered Water\r\n  description: Hot beverages and refreshments\r\n  type: free\r\n- \r\n  amenity_id: \"10\"\r\n  amenity: Lockers\r\n  description: To store your stuff securely\r\n  type: free\r\n- \r\n  amenity_id: \"11\"\r\n  amenity: Meeting Rooms\r\n  description: Need to book a meeting room?\r\n  type: free\r\n- \r\n  amenity_id: \"12\"\r\n  amenity: Pets Allowed\r\n  description: Just let us know in advance\r\n  type: free\r\n- \r\n  amenity_id: \"8\"\r\n  amenity: Mail Service\r\n  description: Option to get a local address\r\n  type: free\r\n- \r\n  amenity_id: \"9\"\r\n  amenity: Wheelchair Accessible\r\n  description: You can roll right in\r\n  type: free\r\n- \r\n  amenity_id: \"6\"\r\n  amenity: Phone Booth/Room\r\n  description: Designated spot for your calls\r\n  type: free\r\n- \r\n  amenity_id: \"4\"\r\n  amenity: Shared Kitchen\r\n  description: Warm up your lunch or keep it cool\r\n  type: free\r\n- \r\n  amenity_id: \"7\"\r\n  amenity: WiFi\r\n  description: Reliable wireless Internet\r\n  type: free",
+            "google_place_id": "ChIJWzeiy-a5yhQRaOE6984ve9Q",
+            "slug": "kolektif-house-sishane",
+            "id": 8113,
+            "location":
+            {
+                "lat": 41.02817917,
+                "lng": 28.97173119
+            }
+        },
+        {
+            "title": "Workhaus",
+            "type": "3",
+            "address": "Dereboyu 2 Cad. Nurol Plaza 21, , 34450, Istanbul",
+            "description": "Workhaus is an office complex incorporating the entire necessary infrastructure for your comfort.",
+            "tags": "coworking,serviced office,meeting room,haz\\u0131r ofis,payla\\u015f\\u0131ml\\u0131 ofis,toplant\\u0131 odas\\u0131,hot desk,flexi,desk,coffee,tea,kahve,cafe,\\u00e7ay,metro,public transport,drop in,parking,Istanbul,Turkey,Maslak,enterpreneur,giri\\u015fimci,start up,bili\\u015fim,creative,yarat\\u0131c\\u0131",
+            "book_url": "",
+            "website": "http://www.workhaus.com.tr/",
+            "image":
+            {
+                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/workhaus/workhaus-600x429.png",
+                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/workhaus/workhaus-180x129.png"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "80",
+                    "price_month": "600"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "850"
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "0",
+                    "price_month": "3600"
+                }
+            ],
+            "google_place_id": "ChIJGyq7mZW1yhQRWrvzBJB5Xm4",
+            "amenities": "",
+            "gallery": "",
+            "slug": "workhaus",
+            "id": 8199,
+            "location":
+            {
+                "lat": 41.11910629,
+                "lng": 29.02033615
+            }
+        },
+        {
+            "title": "Workinton",
+            "type": "1",
+            "address": "Buyukdere Caddesi, , 34000, Istanbul",
+            "description": "Workinton Levent 199 combines the location advantage with its accessibility and advanced technical infrastructure, and is up for being the meeting base of the business world.",
+            "tags": "workinton,coworking,serviced office,virtual office,private desk",
+            "book_url": "",
+            "website": "",
+            "image":
+            {
+                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/workinton/workinton-levent-600x277.jpg",
+                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/workinton/workinton-levent-180x83.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "34",
+                    "price_month": "465"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "0",
+                    "price_month": "750"
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "0",
+                    "price_month": "4000"
+                }
+            ],
+            "google_place_id": "ChIJz2Sbzme2yhQRb6NATaoNIc0",
+            "amenities": "",
+            "slug": "workinton",
+            "id": 8859,
+            "location":
+            {
+                "lat": 41.08070374,
+                "lng": 29.01093864
+            }
+        },
+        {
+            "title": "Kolektif House Levent",
+            "type": "3",
+            "google_place_id": "ChIJmXYXdGe2yhQR3vkR5tjvb5M",
+            "address": "Esentepe Mahallesi, Talatpaşa Cd. No:5, 34394 Şişli/İstanbul, Turkey",
+            "description": "In İstanbul’s financial district, we have turned an old embroidery factory into a living coworking space.",
+            "tags": "",
+            "book_url": "",
+            "website": "https://www.kolektifhouse.co/en/levent-office/",
+            "image":
+            {
+                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/kolektif-house-levent/levent-4-600x400.jpg",
+                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/kolektif-house-levent/levent-4-180x120.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "",
+                    "price_month": "890"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "1500"
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "",
+                    "price_month": "2900"
+                }
+            ],
+            "amenities": "- \r\n  amenity_id: \"13\"\r\n  amenity: Lounge Area\r\n  description: >\r\n    Lounges specially designed for you to\r\n    relax and hold your casual meetings\r\n  type: free\r\n- \r\n  amenity_id: \"1\"\r\n  amenity: Catering Available\r\n  description: Contact us to learn more\r\n  type: free\r\n- \r\n  amenity_id: \"2\"\r\n  amenity: Coffee/Tea/Filtered Water\r\n  description: Hot beverages and refreshments\r\n  type: free\r\n- \r\n  amenity_id: \"3\"\r\n  amenity: Cafe/Restaurant\r\n  description: Find it right here!\r\n  type: free\r\n- \r\n  amenity_id: \"4\"\r\n  amenity: Shared Kitchen\r\n  description: Warm up your lunch or keep it cool\r\n  type: free\r\n- \r\n  amenity_id: \"5\"\r\n  amenity: 24/7 Option\r\n  description: Full 24\\/7 access option available\r\n  type: free\r\n- \r\n  amenity_id: \"6\"\r\n  amenity: Phone Booth/Room\r\n  description: Designated spot for your calls\r\n  type: free\r\n- \r\n  amenity_id: \"7\"\r\n  amenity: WiFi\r\n  description: Reliable wireless Internet\r\n  type: free\r\n- \r\n  amenity_id: \"8\"\r\n  amenity: Mail Service\r\n  description: Option to get a local address\r\n  type: free\r\n- \r\n  amenity_id: \"9\"\r\n  amenity: Wheelchair Accessible\r\n  description: You can roll right in\r\n  type: free\r\n- \r\n  amenity_id: \"10\"\r\n  amenity: Lockers\r\n  description: To store your stuff securely\r\n  type: free\r\n- \r\n  amenity_id: \"11\"\r\n  amenity: Meeting Rooms\r\n  description: Need to book a meeting room?\r\n  type: free\r\n- \r\n  amenity_id: \"12\"\r\n  amenity: Pets Allowed\r\n  description: Just let us know in advance\r\n  type: free",
+            "slug": "kolektif-house-levent",
+            "id": 8114,
+            "location":
+            {
+                "lat": 41.0798466,
+                "lng": 29.0061432
+            }
+        },
+        {
+            "title": "Kamara",
+            "type": "1",
+            "google_place_id": "ChIJ6aRpv-TGyhQR0kL4phRYlN8",
+            "address": "Altıntepe Mh, İstasyon Yolu Sokağı No:3, 34840 Maltepe/İstanbul, Turkey",
+            "description": "Kamara's serviced offices, virtual offices and co-working spaces has attracted everyone ranging from new entrepreneurs to corporate firms",
+            "tags": "",
+            "website": "https://kamara.com.tr/en/",
+            "book_url": "",
+            "image":
+            {
+                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/kamara/anasayfa-3-600x417.jpg",
+                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/kamara/anasayfa-3-180x125.jpg"
+            },
+            "gallery": "- anasayfa-3.jpg\r\n- anasayfa-1.jpg\r\n- anasayfa-5.jpg\r\n- anasayfa-2.jpg\r\n- anasayfa-4.jpg",
+            "free_trial_day": "1",
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "30",
+                    "price_month": ""
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "500"
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "",
+                    "price_month": "1000"
+                }
+            ],
+            "amenities": "- \r\n  amenity_id: \"2\"\r\n  amenity: Coffee/Tea/Filtered Water\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"3\"\r\n  amenity: Cafe/Restaurant\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"4\"\r\n  amenity: Shared Kitchen\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"5\"\r\n  amenity: 24/7 Option\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"6\"\r\n  amenity: Phone Booth\\/ Room\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"7\"\r\n  amenity: WiFi\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"8\"\r\n  amenity: Mail Service\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"9\"\r\n  amenity: Wheelchair Accessible\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"10\"\r\n  amenity: Lockers\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"11\"\r\n  amenity: Meeting Rooms\r\n  description: \"\"\r\n  type: paid\r\n- \r\n  amenity_id: \"12\"\r\n  amenity: Pets Allowed\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"13\"\r\n  amenity: Lounge Area\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"14\"\r\n  amenity: Print voucher/Yazici kullanimi\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"15\"\r\n  amenity: Virtual Office/Sanal Ofis\r\n  description: \"\"\r\n  type: paid\r\n- \r\n  amenity_id: \"16\"\r\n  amenity: Communication Package/Iletisim Paketi\r\n  description: \"\"\r\n  type: free",
+            "slug": "kamara",
+            "id": 5,
+            "location":
+            {
+                "lat": 40.9523384,
+                "lng": 29.0962319
+            }
+        }
+    ]
+}

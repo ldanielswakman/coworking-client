@@ -1,0 +1,45 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "WeWork Potsdamer Platz",
+    "type": "3",
+    "google_place_id": "ChIJ_eyJEMxRqEcRW16JVzGwFlE",
+    "address": "Stresemannstraße 123, 10963 Berlin",
+    "description": "WeWork Potsdamer Platz lets you centre your business in the centre of Berlin.",
+    "tags": "",
+    "website": "https://www.wework.com/buildings/stresemannstrasse-123--berlin",
+    "book_url": "https://www.wework.com/buildings/stresemannstrasse-123--berlin",
+    "image": {
+      "medium": "api/berlin/thumbs/wework-potsdamer-platz/20160216_fine_arts_la_-_members-35-600x400.jpg",
+      "thumb": "api/berlin/thumbs/wework-potsdamer-platz/20160216_fine_arts_la_-_members-35-180x120.jpg"
+    },
+    "gallery": "",
+    "free_trial_day": "0",
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "",
+        "price_month": "350"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "370"
+      }
+    ],
+    "amenities": [
+      
+    ],
+    "slug": "wework-potsdamer-platz",
+    "id": 12,
+    "location": {
+      "lat": 52.50735339999999951032805256545543670654296875,
+      "lng": 13.3782069000000003455852493061684072017669677734375
+    }
+  }
+}

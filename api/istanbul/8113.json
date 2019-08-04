@@ -1,0 +1,126 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Kolektif House Şişhane",
+    "type": "3",
+    "address": "Sadi Konuralp Cad., 34433, Istanbul",
+    "description": "We have joined the culture and arts venue IKSV in the historical Deniz Palas building, now called Nejat Eczabaşı, transforming their second floor into a living coworking space.",
+    "tags": "Coworking Space,Istanbul,Creative Space",
+    "book_url": "",
+    "website": "https://www.kolektifhouse.co/en/sishane-office/",
+    "image": {
+      "medium": "api/istanbul/thumbs/kolektif-house-sishane/kolektif-house-600x338.png",
+      "thumb": "api/istanbul/thumbs/kolektif-house-sishane/kolektif-house-180x101.png"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "29",
+        "price_month": "490"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "0",
+        "price_month": "790"
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "0",
+        "price_month": "3200"
+      }
+    ],
+    "amenities": [
+      {
+        "amenity_id": "13",
+        "amenity": "Lounge Area",
+        "description": "Lounges specially designed for you to relax and hold your casual meetings",
+        "type": "free"
+      },
+      {
+        "amenity_id": "5",
+        "amenity": "24/7 Option",
+        "description": "Full 24\\/7 access option available",
+        "type": "free"
+      },
+      {
+        "amenity_id": "3",
+        "amenity": "Cafe/Restaurant",
+        "description": "Find it right here!",
+        "type": "free"
+      },
+      {
+        "amenity_id": "1",
+        "amenity": "Catering Available",
+        "description": "Contact us to learn more",
+        "type": "free"
+      },
+      {
+        "amenity_id": "2",
+        "amenity": "Coffee/Tea/Filtered Water",
+        "description": "Hot beverages and refreshments",
+        "type": "free"
+      },
+      {
+        "amenity_id": "10",
+        "amenity": "Lockers",
+        "description": "To store your stuff securely",
+        "type": "free"
+      },
+      {
+        "amenity_id": "11",
+        "amenity": "Meeting Rooms",
+        "description": "Need to book a meeting room?",
+        "type": "free"
+      },
+      {
+        "amenity_id": "12",
+        "amenity": "Pets Allowed",
+        "description": "Just let us know in advance",
+        "type": "free"
+      },
+      {
+        "amenity_id": "8",
+        "amenity": "Mail Service",
+        "description": "Option to get a local address",
+        "type": "free"
+      },
+      {
+        "amenity_id": "9",
+        "amenity": "Wheelchair Accessible",
+        "description": "You can roll right in",
+        "type": "free"
+      },
+      {
+        "amenity_id": "6",
+        "amenity": "Phone Booth/Room",
+        "description": "Designated spot for your calls",
+        "type": "free"
+      },
+      {
+        "amenity_id": "4",
+        "amenity": "Shared Kitchen",
+        "description": "Warm up your lunch or keep it cool",
+        "type": "free"
+      },
+      {
+        "amenity_id": "7",
+        "amenity": "WiFi",
+        "description": "Reliable wireless Internet",
+        "type": "free"
+      }
+    ],
+    "google_place_id": "ChIJWzeiy-a5yhQRaOE6984ve9Q",
+    "slug": "kolektif-house-sishane",
+    "id": 8113,
+    "location": {
+      "lat": 41.0281791700000013634053175337612628936767578125,
+      "lng": 28.9717311899999998558996594510972499847412109375
+    }
+  }
+}

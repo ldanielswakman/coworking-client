@@ -1,0 +1,105 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Tuesday Coworking",
+    "type": "3",
+    "google_place_id": "ChIJJU27iGpQqEcR2qX3sw_P2hg",
+    "address": "Feurigstraße 51, 10827 Berlin",
+    "description": "Coworking Space for Individuals and Small Teams in Berlin-Schöneberg",
+    "tags": "",
+    "book_url": "",
+    "website": "https://www.tuesdaycoworking.com/",
+    "image": {
+      "medium": "api/berlin/thumbs/tuesday-coworking/7dcb1735957225d3853371736eca04d3-600x351.jpg",
+      "thumb": "api/berlin/thumbs/tuesday-coworking/7dcb1735957225d3853371736eca04d3-180x105.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "3",
+        "type": "Flex Desk",
+        "price_day": "",
+        "price_month": "165"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "265"
+      }
+    ],
+    "amenities": [
+      {
+        "amenity_id": "2",
+        "amenity": "Coffee/Tea/Filtered Water",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "7",
+        "amenity": "WiFi",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "11",
+        "amenity": "Meeting Rooms",
+        "description": "",
+        "type": "free"
+      },
+      {
+        "amenity_id": "5",
+        "amenity": "24/7 Option",
+        "description": "No extra cost",
+        "type": "free"
+      },
+      {
+        "amenity_id": "8",
+        "amenity": "Mail Service",
+        "description": "+ €49 per month",
+        "type": "free"
+      }
+    ],
+    "gallery": [
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/8-tuesday-coworking/7dcb1735957225d3853371736eca04d3.jpg",
+        "large": "api/berlin/thumbs/tuesday-coworking/7dcb1735957225d3853371736eca04d3-1000x585.jpg",
+        "medium": "api/berlin/thumbs/tuesday-coworking/7dcb1735957225d3853371736eca04d3-600x351.jpg",
+        "thumb": "api/berlin/thumbs/tuesday-coworking/7dcb1735957225d3853371736eca04d3-180x105.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/8-tuesday-coworking/5ca015_509d8dafe368435980a8d76166e8e8fd_mv2_d_3264_2448_s_4_2.jpg",
+        "large": "api/berlin/thumbs/tuesday-coworking/5ca015_509d8dafe368435980a8d76166e8e8fd_mv2_d_3264_2448_s_4_2-1000x751.jpg",
+        "medium": "api/berlin/thumbs/tuesday-coworking/5ca015_509d8dafe368435980a8d76166e8e8fd_mv2_d_3264_2448_s_4_2-600x451.jpg",
+        "thumb": "api/berlin/thumbs/tuesday-coworking/5ca015_509d8dafe368435980a8d76166e8e8fd_mv2_d_3264_2448_s_4_2-180x135.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/8-tuesday-coworking/5ca015_fb91cf3cefe242a380f5c124c11d36de_mv2_d_3500_2336_s_2.jpg",
+        "large": "api/berlin/thumbs/tuesday-coworking/5ca015_fb91cf3cefe242a380f5c124c11d36de_mv2_d_3500_2336_s_2-1000x668.jpg",
+        "medium": "api/berlin/thumbs/tuesday-coworking/5ca015_fb91cf3cefe242a380f5c124c11d36de_mv2_d_3500_2336_s_2-600x401.jpg",
+        "thumb": "api/berlin/thumbs/tuesday-coworking/5ca015_fb91cf3cefe242a380f5c124c11d36de_mv2_d_3500_2336_s_2-180x120.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/8-tuesday-coworking/5ca015_90143dc124b9454ab4a8b9391576025e_mv2_d_3500_2336_s_2.jpg",
+        "large": "api/berlin/thumbs/tuesday-coworking/5ca015_90143dc124b9454ab4a8b9391576025e_mv2_d_3500_2336_s_2-1000x668.jpg",
+        "medium": "api/berlin/thumbs/tuesday-coworking/5ca015_90143dc124b9454ab4a8b9391576025e_mv2_d_3500_2336_s_2-600x401.jpg",
+        "thumb": "api/berlin/thumbs/tuesday-coworking/5ca015_90143dc124b9454ab4a8b9391576025e_mv2_d_3500_2336_s_2-180x120.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/8-tuesday-coworking/5ca015_5b4704cbe48a4ca692ab4be5f00d1307_mv2_d_3264_1836_s_2.jpg",
+        "large": "api/berlin/thumbs/tuesday-coworking/5ca015_5b4704cbe48a4ca692ab4be5f00d1307_mv2_d_3264_1836_s_2-1000x563.jpg",
+        "medium": "api/berlin/thumbs/tuesday-coworking/5ca015_5b4704cbe48a4ca692ab4be5f00d1307_mv2_d_3264_1836_s_2-600x338.jpg",
+        "thumb": "api/berlin/thumbs/tuesday-coworking/5ca015_5b4704cbe48a4ca692ab4be5f00d1307_mv2_d_3264_1836_s_2-180x101.jpg"
+      }
+    ],
+    "free_trial_day": "0",
+    "slug": "tuesday-coworking",
+    "id": 8,
+    "location": {
+      "lat": 52.48306000000000182126314030028879642486572265625,
+      "lng": 13.3515312999999995469124769442714750766754150390625
+    }
+  }
+}

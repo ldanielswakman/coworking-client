@@ -1,0 +1,49 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "Atölye İstanbul",
+    "type": "3",
+    "address": "Silahşör Cad. Birahane Sok. No: 1 Şişli, Istanbul, Turkey",
+    "description": "ATÖLYE is a diligent curator of a strong community around design, entrepreneurship and technology.",
+    "tags": "",
+    "book_url": "",
+    "website": "https://atolye.io/en/",
+    "image": {
+      "medium": "api/istanbul/thumbs/atolye-istanbul/atolye-large-600x352.jpg",
+      "thumb": "api/istanbul/thumbs/atolye-istanbul/atolye-large-180x106.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "",
+        "price_month": ""
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": ""
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "",
+        "price_month": ""
+      }
+    ],
+    "google_place_id": "ChIJc-EsZxe3yhQRWj_9PyYRoWA",
+    "amenities": [
+      
+    ],
+    "slug": "atolye-istanbul",
+    "id": 4,
+    "location": {
+      "lat": 41.0583979000000027781425160355865955352783203125,
+      "lng": 28.9803691999999983863745001144707202911376953125
+    }
+  }
+}

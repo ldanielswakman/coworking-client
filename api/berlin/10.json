@@ -1,0 +1,111 @@
+{
+    "status":
+    {
+        "code": 200,
+        "message": "OK"
+    },
+    "response":
+    {
+        "title": "The Place Berlin",
+        "type": "3",
+        "google_place_id": "ChIJS5p1GdRRqEcRzsGIWmC3INQ",
+        "address": "Charlottenstraße 2, 10969 Berlin",
+        "description": "The Place is an international startup hub—a stimulating 2000 square meter space within a former printing house.",
+        "tags": "",
+        "website": "http://theplaceberlin.com/",
+        "book_url": "",
+        "image":
+        {
+            "medium": "api/berlin/thumbs/the-place-berlin/the-place_internet-71-1-600x400.jpg",
+            "thumb": "api/berlin/thumbs/the-place-berlin/the-place_internet-71-1-180x120.jpg"
+        },
+        "gallery":
+        [
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/10-the-place-berlin/the-place_internet-71-1.jpg",
+                "large": "api/berlin/thumbs/the-place-berlin/the-place_internet-71-1-1000x667.jpg",
+                "medium": "api/berlin/thumbs/the-place-berlin/the-place_internet-71-1-600x400.jpg",
+                "thumb": "api/berlin/thumbs/the-place-berlin/the-place_internet-71-1-180x120.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/10-the-place-berlin/the-place-to-start-1.jpg",
+                "large": "api/berlin/thumbs/the-place-berlin/the-place-to-start-1-801x501.jpg",
+                "medium": "api/berlin/thumbs/the-place-berlin/the-place-to-start-1-600x375.jpg",
+                "thumb": "api/berlin/thumbs/the-place-berlin/the-place-to-start-1-180x113.jpg"
+            },
+            {
+                "original": "http://localhost/coworking-api/api/content/2-berlin/10-the-place-berlin/the-place_hd-49.jpg",
+                "large": "api/berlin/thumbs/the-place-berlin/the-place_hd-49-1000x668.jpg",
+                "medium": "api/berlin/thumbs/the-place-berlin/the-place_hd-49-600x401.jpg",
+                "thumb": "api/berlin/thumbs/the-place-berlin/the-place_hd-49-180x120.jpg"
+            }
+        ],
+        "workspaces":
+        [
+            {
+                "ws_type_id": "3",
+                "type": "Flex Desk",
+                "price_day": "",
+                "price_month": "175"
+            },
+            {
+                "ws_type_id": "2",
+                "type": "Dedicated Desk",
+                "price_day": "",
+                "price_month": "250"
+            }
+        ],
+        "amenities":
+        [
+            {
+                "amenity_id": "7",
+                "amenity": "WiFi",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "14",
+                "amenity": "Print voucher/Yazici kullanimi",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "8",
+                "amenity": "Mail Service",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "11",
+                "amenity": "Meeting Rooms",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "2",
+                "amenity": "Coffee/Tea/Filtered Water",
+                "description": "",
+                "type": "free"
+            },
+            {
+                "amenity_id": "5",
+                "amenity": "24/7 Option",
+                "description": "",
+                "type": "paid"
+            },
+            {
+                "amenity_id": "10",
+                "amenity": "Lockers",
+                "description": "",
+                "type": "paid"
+            }
+        ],
+        "slug": "the-place-berlin",
+        "id": 10,
+        "location":
+        {
+            "lat": 52.5055829,
+            "lng": 13.3932478
+        }
+    }
+}

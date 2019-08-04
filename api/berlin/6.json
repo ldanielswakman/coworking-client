@@ -1,0 +1,93 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "ESDIP Berlin",
+    "type": "3",
+    "google_place_id": "ChIJgVjiOFxOqEcRSmh52rfaP-c",
+    "address": "Grünberger Str. 48b, 10245 Berlin",
+    "description": "ESDIP Berlin is a coworking space and an art school in Friedrichshain.",
+    "tags": "",
+    "book_url": "",
+    "website": "http://esdipberlin.com/",
+    "image": {
+      "medium": "api/berlin/thumbs/esdip/big-600x400.jpg",
+      "thumb": "api/berlin/thumbs/esdip/big-180x120.jpg"
+    },
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "15",
+        "price_month": ""
+      },
+      {
+        "ws_type_id": "3",
+        "type": "Flex Desk",
+        "price_day": "",
+        "price_month": "185"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "245"
+      }
+    ],
+    "amenities": [
+      {
+        "amenity_id": "7",
+        "amenity": "WiFi",
+        "description": "WLAN / Highspeed DSL",
+        "type": "free"
+      },
+      {
+        "amenity_id": "14",
+        "amenity": "Printer (/voucher)",
+        "description": "Color printer/scanner",
+        "type": "free"
+      },
+      {
+        "amenity_id": "11",
+        "amenity": "Meeting Rooms",
+        "description": "Meeting room",
+        "type": "free"
+      },
+      {
+        "amenity_id": "5",
+        "amenity": "24/7 Option",
+        "description": "+ €40 per month",
+        "type": "paid"
+      }
+    ],
+    "gallery": [
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/7-esdip/big.jpg",
+        "large": "api/berlin/thumbs/esdip/big-800x533.jpg",
+        "medium": "api/berlin/thumbs/esdip/big-600x400.jpg",
+        "thumb": "api/berlin/thumbs/esdip/big-180x120.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/7-esdip/esdip-berlin-1.jpg",
+        "large": "api/berlin/thumbs/esdip/esdip-berlin-1-600x400.jpg",
+        "medium": "api/berlin/thumbs/esdip/esdip-berlin-1-600x400.jpg",
+        "thumb": "api/berlin/thumbs/esdip/esdip-berlin-1-180x120.jpg"
+      },
+      {
+        "original": "http://localhost/coworking-api/api/content/2-berlin/7-esdip/esdip-berlin-21.jpg",
+        "large": "api/berlin/thumbs/esdip/esdip-berlin-21-600x400.jpg",
+        "medium": "api/berlin/thumbs/esdip/esdip-berlin-21-600x400.jpg",
+        "thumb": "api/berlin/thumbs/esdip/esdip-berlin-21-180x120.jpg"
+      }
+    ],
+    "free_trial_day": "0",
+    "slug": "esdip",
+    "id": 6,
+    "location": {
+      "lat": 52.51195680000000010068106348626315593719482421875,
+      "lng": 13.4525725000000004882849680143408477306365966796875
+    }
+  }
+}

@@ -1,0 +1,633 @@
+{
+    "status":
+    {
+        "code": 200,
+        "message": "OK"
+    },
+    "response":
+    [
+        {
+            "title": "Factory Mitte",
+            "type": "1",
+            "google_place_id": "ChIJFzbqHPFRqEcRDC9pi8Ztqz4",
+            "address": "Rheinsberger Str. 76/77, 10115 Berlin",
+            "description": "Factory Berlin is a next generation business club, connecting innovators to build relationships that truly matter",
+            "tags": "",
+            "book_url": "",
+            "website": "http://factoryberlin.com/",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/factory-mitte/aussenansicht_factory-600x400.jpg",
+                "thumb": "api/berlin/thumbs/factory-mitte/aussenansicht_factory-180x120.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "119"
+                }
+            ],
+            "amenities": "",
+            "gallery": "- aussenansicht_factory.jpg\r\n- >\r\n  berlin-business-guide-die-besten-coworking-spaces-und-cafs-20-07-2015-14-59.jpg\r\n- factory-berlin-13.jpg\r\n- factory-berlin-9.jpg\r\n- >\r\n  factory-berlin-julian-breinersdorfer-06.jpg",
+            "free_trial_day": "0",
+            "slug": "factory-mitte",
+            "id": 1,
+            "location":
+            {
+                "lat": 52.5372444,
+                "lng": 13.3945356
+            }
+        },
+        {
+            "title": "Factory Görlitzer Park",
+            "type": "1",
+            "google_place_id": "ChIJk7VJuqxPqEcR29xr6LwXVS0",
+            "address": "Lohmühlenstraße 65, 12435 Berlin",
+            "description": "Berlin’s startup ecosystem grew, and so did we. Factory Görlitzer is not only home to our thriving community, but also a meditation room, a cinema... oh and a ball pit.",
+            "tags": "",
+            "website": "https://factoryberlin.com/",
+            "book_url": "",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/factory-goerlitzer-park/gorli-600x422.jpg",
+                "thumb": "api/berlin/thumbs/factory-goerlitzer-park/gorli-180x126.jpg"
+            },
+            "gallery": "",
+            "free_trial_day": "0",
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "119"
+                }
+            ],
+            "amenities": "",
+            "slug": "factory-goerlitzer-park",
+            "id": 13,
+            "location":
+            {
+                "lat": 52.4940255,
+                "lng": 13.4441473
+            }
+        },
+        {
+            "title": "Enklave",
+            "type": "3",
+            "google_place_id": "ChIJW2SP7L1PqEcRGoy-LO9h8xk",
+            "address": "Kienitzer Str. 100, 12049 Berlin",
+            "description": "Low-cost coworking space for community loving freelancers and start-ups in Berlin Neukölln",
+            "tags": "",
+            "book_url": "",
+            "website": "http://www.enklave.de/",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/enklave/workspace-600x363.jpg",
+                "thumb": "api/berlin/thumbs/enklave/workspace-180x109.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "8",
+                    "price_month": "30"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "178"
+                }
+            ],
+            "amenities": "",
+            "free_trial_day": "1",
+            "gallery": "",
+            "slug": "enklave",
+            "id": 2,
+            "location":
+            {
+                "lat": 52.476074,
+                "lng": 13.42544
+            }
+        },
+        {
+            "title": "betahaus",
+            "type": "3",
+            "google_place_id": "ChIJqQFHjS1OqEcR8d99mafShxY",
+            "address": "Köpenicker Str. 154, 10997 Berlin",
+            "description": "betahaus is a coworking space and community for people who want to work on their own projects while exchanging knowledge, ideas, and inspiration with others",
+            "tags": "",
+            "book_url": "https://www.betahaus.com/coworking-membership-berlin",
+            "website": "https://www.betahaus.com/",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/betahaus/7-600x400.jpg",
+                "thumb": "api/berlin/thumbs/betahaus/7-180x120.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "",
+                    "price_month": ""
+                },
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "99"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "200"
+                }
+            ],
+            "amenities": "",
+            "gallery": "- 7.jpg\r\n- >\r\n  592560a501df07424a7ce80d_coworking1-slider2.jpg\r\n- >\r\n  592567ef5ba7ec4e53d797e1_coworking3-slider.jpg\r\n- >\r\n  59257d3dff1fae220896209f_cafe-slider2.jpg",
+            "free_trial_day": "1",
+            "slug": "betahaus",
+            "id": 3,
+            "location":
+            {
+                "lat": 52.5055763,
+                "lng": 13.4307807
+            }
+        },
+        {
+            "title": "Ahoy! Berlin",
+            "type": "3",
+            "google_place_id": "ChIJPZDUWfRRqEcRHIEMEqFSkTk",
+            "address": "Wattstraße 11, 13355 Berlin, Germany",
+            "description": "We provide spaces that drive productivity and innovation. We empower our members professionally and personally",
+            "tags": "",
+            "book_url": "https://www.ahoyberlin.com/workspaces",
+            "website": "https://www.ahoyberlin.com/",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/ahoy-berlin/14-600x400.jpg",
+                "thumb": "api/berlin/thumbs/ahoy-berlin/14-180x120.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "15",
+                    "price_month": ""
+                },
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "150"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "190"
+                }
+            ],
+            "amenities": "- \r\n  amenity_id: \"3\"\r\n  amenity: Cafe/Restaurant\r\n  description: \"\"\r\n  type: paid\r\n- \r\n  amenity_id: \"10\"\r\n  amenity: Lockers\r\n  description: + €25 per month\r\n  type: paid\r\n- \r\n  amenity_id: \"5\"\r\n  amenity: 24/7 Option\r\n  description: + €30 per month\r\n  type: paid\r\n- \r\n  amenity_id: \"15\"\r\n  amenity: Virtual Office\r\n  description: + €99 per month\r\n  type: paid\r\n- \r\n  amenity_id: \"7\"\r\n  amenity: WiFi\r\n  description: \"\"\r\n  type: free\r\n- \r\n  amenity_id: \"13\"\r\n  amenity: Lounge Area\r\n  description: \"\"\r\n  type: free",
+            "gallery": "",
+            "free_trial_day": "0",
+            "slug": "ahoy-berlin",
+            "id": 4,
+            "location":
+            {
+                "lat": 52.5412308,
+                "lng": 13.3905999
+            }
+        },
+        {
+            "title": "Mindspace Mitte",
+            "type": "3",
+            "google_place_id": "ChIJa-cbfNpRqEcR-7OtwASSiFI",
+            "address": "Friedrichstraße 68, 10117 Berlin",
+            "description": "Coworking In Berlin. Mindspace is placed in the heart of the cosmopolitan – amongst the tech giants, museums, fashion houses, and cafes, and in the midst of Berlin's thriving startup ecosystem",
+            "tags": "",
+            "book_url": "https://www.mindspace.me/mindpass/",
+            "website": "https://www.mindspace.me/berlin/",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/mindspace-mitte/5ae439dc50995f2a4f2ef6c7bd2894e8-600x390.jpg",
+                "thumb": "api/berlin/thumbs/mindspace-mitte/5ae439dc50995f2a4f2ef6c7bd2894e8-180x117.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "",
+                    "price_month": "50"
+                },
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "350"
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "",
+                    "price_month": "1000"
+                }
+            ],
+            "amenities": "- \r\n  amenity_id: \"5\"\r\n  amenity: 24/7 Option\r\n  description: 24/7 access\r\n  type: free\r\n- \r\n  amenity_id: \"7\"\r\n  amenity: WiFi\r\n  description: Super fast internet\r\n  type: free\r\n- \r\n  amenity_id: \"2\"\r\n  amenity: Coffee/Tea/Filtered Water\r\n  description: Soda Fountain\r\n  type: free\r\n- \r\n  amenity_id: \"2\"\r\n  amenity: Coffee/Tea/Filtered Water\r\n  description: Coffee Bar\r\n  type: free\r\n- \r\n  amenity_id: \"6\"\r\n  amenity: Phone Booth\\/ Room\r\n  description: PRIVATE PHONE BOOTHS\r\n  type: free\r\n- \r\n  amenity_id: \"14\"\r\n  amenity: Print voucher/Yazici kullanimi\r\n  description: \"\"\r\n  type: paid\r\n- \r\n  amenity_id: \"11\"\r\n  amenity: Meeting Rooms\r\n  description: \"\"\r\n  type: paid",
+            "gallery": "- 5ae439dc50995f2a4f2ef6c7bd2894e8.jpg\r\n- berlin_pic.jpg",
+            "free_trial_day": "0",
+            "slug": "mindspace-mitte",
+            "id": 5,
+            "location":
+            {
+                "lat": 52.5122295,
+                "lng": 13.3880206
+            }
+        },
+        {
+            "title": "ESDIP Berlin",
+            "type": "3",
+            "google_place_id": "ChIJgVjiOFxOqEcRSmh52rfaP-c",
+            "address": "Grünberger Str. 48b, 10245 Berlin",
+            "description": "ESDIP Berlin is a coworking space and an art school in Friedrichshain.",
+            "tags": "",
+            "book_url": "",
+            "website": "http://esdipberlin.com/",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/esdip/big-600x400.jpg",
+                "thumb": "api/berlin/thumbs/esdip/big-180x120.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "15",
+                    "price_month": ""
+                },
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "185"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "245"
+                }
+            ],
+            "amenities": "- \r\n  amenity_id: \"7\"\r\n  amenity: WiFi\r\n  description: WLAN / Highspeed DSL\r\n  type: free\r\n- \r\n  amenity_id: \"14\"\r\n  amenity: Printer (/voucher)\r\n  description: Color printer/scanner\r\n  type: free\r\n- \r\n  amenity_id: \"11\"\r\n  amenity: Meeting Rooms\r\n  description: Meeting room\r\n  type: free\r\n- \r\n  amenity_id: \"5\"\r\n  amenity: 24/7 Option\r\n  description: + €40 per month\r\n  type: paid",
+            "gallery": "- big.jpg\r\n- esdip-berlin-1.jpg\r\n- esdip-berlin-21.jpg",
+            "free_trial_day": "0",
+            "slug": "esdip",
+            "id": 6,
+            "location":
+            {
+                "lat": 52.5119568,
+                "lng": 13.4525725
+            }
+        },
+        {
+            "title": "Tuesday Coworking",
+            "type": "3",
+            "google_place_id": "ChIJJU27iGpQqEcR2qX3sw_P2hg",
+            "address": "Feurigstraße 51, 10827 Berlin",
+            "description": "Coworking Space for Individuals and Small Teams in Berlin-Schöneberg",
+            "tags": "",
+            "book_url": "",
+            "website": "https://www.tuesdaycoworking.com/",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/tuesday-coworking/7dcb1735957225d3853371736eca04d3-600x351.jpg",
+                "thumb": "api/berlin/thumbs/tuesday-coworking/7dcb1735957225d3853371736eca04d3-180x105.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "165"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "265"
+                }
+            ],
+            "amenities": "- \n  amenity_id: \"2\"\n  amenity: Coffee/Tea/Filtered Water\n  description: \"\"\n  type: free\n- \n  amenity_id: \"7\"\n  amenity: WiFi\n  description: \"\"\n  type: free\n- \n  amenity_id: \"11\"\n  amenity: Meeting Rooms\n  description: \"\"\n  type: free\n- \n  amenity_id: \"5\"\n  amenity: 24/7 Option\n  description: No extra cost\n  type: free\n- \n  amenity_id: \"8\"\n  amenity: Mail Service\n  description: + €49 per month\n  type: free",
+            "gallery": "- 7dcb1735957225d3853371736eca04d3.jpg\n- >\n  5ca015_509d8dafe368435980a8d76166e8e8fd_mv2_d_3264_2448_s_4_2.jpg\n- >\n  5ca015_fb91cf3cefe242a380f5c124c11d36de_mv2_d_3500_2336_s_2.jpg\n- >\n  5ca015_90143dc124b9454ab4a8b9391576025e_mv2_d_3500_2336_s_2.jpg\n- >\n  5ca015_5b4704cbe48a4ca692ab4be5f00d1307_mv2_d_3264_1836_s_2.jpg",
+            "free_trial_day": "0",
+            "slug": "tuesday-coworking",
+            "id": 8,
+            "location":
+            {
+                "lat": 52.48306,
+                "lng": 13.3515313
+            }
+        },
+        {
+            "title": "We're All In",
+            "type": "3",
+            "google_place_id": "ChIJj5rPWu9RqEcRA6gE6RndLlI",
+            "address": "Torstraße 177, 10115 Berlin, Germany",
+            "description": "A coworking space for creative professionals\r\nin the vibrant heart of Berlin Mitte.",
+            "tags": "",
+            "website": "http://waai.de/",
+            "book_url": "",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/we-re-all-in/17310189_274651546308998_6244258056101048139_o-600x400.jpg",
+                "thumb": "api/berlin/thumbs/we-re-all-in/17310189_274651546308998_6244258056101048139_o-180x120.jpg"
+            },
+            "gallery": "",
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "40",
+                    "price_month": "300"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "350"
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "",
+                    "price_month": "900"
+                }
+            ],
+            "amenities": "",
+            "free_trial_day": "0",
+            "slug": "we-re-all-in",
+            "id": 9,
+            "location":
+            {
+                "lat": 52.5287937,
+                "lng": 13.3920721
+            }
+        },
+        {
+            "title": "The Place Berlin",
+            "type": "3",
+            "google_place_id": "ChIJS5p1GdRRqEcRzsGIWmC3INQ",
+            "address": "Charlottenstraße 2, 10969 Berlin",
+            "description": "The Place is an international startup hub—a stimulating 2000 square meter space within a former printing house.",
+            "tags": "",
+            "website": "http://theplaceberlin.com/",
+            "book_url": "",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/the-place-berlin/the-place_internet-71-1-600x400.jpg",
+                "thumb": "api/berlin/thumbs/the-place-berlin/the-place_internet-71-1-180x120.jpg"
+            },
+            "gallery": "- the-place_internet-71-1.jpg\n- the-place-to-start-1.jpg\n- the-place_hd-49.jpg",
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "175"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "250"
+                }
+            ],
+            "amenities": "- \n  amenity_id: \"7\"\n  amenity: WiFi\n  description: \"\"\n  type: free\n- \n  amenity_id: \"14\"\n  amenity: Print voucher/Yazici kullanimi\n  description: \"\"\n  type: free\n- \n  amenity_id: \"8\"\n  amenity: Mail Service\n  description: \"\"\n  type: free\n- \n  amenity_id: \"11\"\n  amenity: Meeting Rooms\n  description: \"\"\n  type: free\n- \n  amenity_id: \"2\"\n  amenity: Coffee/Tea/Filtered Water\n  description: \"\"\n  type: free\n- \n  amenity_id: \"5\"\n  amenity: 24/7 Option\n  description: \"\"\n  type: paid\n- \n  amenity_id: \"10\"\n  amenity: Lockers\n  description: \"\"\n  type: paid",
+            "slug": "the-place-berlin",
+            "id": 10,
+            "location":
+            {
+                "lat": 52.5055829,
+                "lng": 13.3932478
+            }
+        },
+        {
+            "title": "Impact Hub Berlin",
+            "type": "3",
+            "google_place_id": "ChIJ5QJTPStQqEcR7kpXyAjxhMQ",
+            "address": "Friedrichstraße 246, 10969 Berlin",
+            "description": "Global community, consultancy and creative space.",
+            "tags": "social",
+            "website": "https://berlin.impacthub.net/",
+            "book_url": "https://berlin.impacthub.net/join-impact-hub/",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/impact-hub-berlin/hub-461-600x600.jpg",
+                "thumb": "api/berlin/thumbs/impact-hub-berlin/hub-461-180x180.jpg"
+            },
+            "gallery": "- hub-461.jpg\n- ihb_people.jpg\n- focused-area.jpg\n- meeting-room-768-x-540.jpg\n- about1.jpg",
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "195"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "295"
+                }
+            ],
+            "amenities": "- \n  amenity_id: \"2\"\n  amenity: Coffee/Tea/Filtered Water\n  description: \"\"\n  type: free\n- \n  amenity_id: \"11\"\n  amenity: Meeting Rooms\n  description: \"\"\n  type: free\n- \n  amenity_id: \"4\"\n  amenity: Shared Kitchen\n  description: \"\"\n  type: free\n- \n  amenity_id: \"5\"\n  amenity: 24/7 Option\n  description: \"\"\n  type: paid\n- \n  amenity_id: \"6\"\n  amenity: Phone Booth/Room\n  description: \"\"\n  type: free\n- \n  amenity_id: \"7\"\n  amenity: WiFi\n  description: \"\"\n  type: free\n- \n  amenity_id: \"8\"\n  amenity: Mail Service\n  description: + €25 per month\n  type: paid\n- \n  amenity_id: \"10\"\n  amenity: Lockers\n  description: + €25 per month\n  type: paid\n- \n  amenity_id: \"13\"\n  amenity: Lounge Area\n  description: \"\"\n  type: free",
+            "free_trial_day": "1",
+            "slug": "impact-hub-berlin",
+            "id": 11,
+            "location":
+            {
+                "lat": 52.5001872,
+                "lng": 13.3908008
+            }
+        },
+        {
+            "title": "WeWork Hackescher Markt",
+            "type": "1",
+            "google_place_id": "ChIJ36rQp-FRqEcRSms_pIsp3EY",
+            "address": "Neue Schönhauser Str. 3-5, 10178 Berlin",
+            "description": "WeWork Hackescher Markt puts its members in trendy Berlin Mitte",
+            "tags": "",
+            "book_url": "https://www.wework.com/buildings/hackescher-markt--berlin#pricing",
+            "website": "https://www.wework.com/buildings/hackescher-markt--berlin",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_common_areas-10-600x450.jpg",
+                "thumb": "api/berlin/thumbs/wework-hackescher-markt/20170202_hackerscher_markt_common_areas-10-180x135.jpg"
+            },
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "430"
+                },
+                {
+                    "ws_type_id": "5",
+                    "type": "Private Office",
+                    "price_day": "",
+                    "price_month": "540"
+                }
+            ],
+            "amenities": "- \n  amenity_id: \"7\"\n  amenity: WiFi\n  description: High Speed Internet\n  type: free\n- \n  amenity_id: \"6\"\n  amenity: Phone Booth\\/ Room\n  description: \"\"\n  type: free\n- \n  amenity_id: \"2\"\n  amenity: Coffee/Tea/Filtered Water\n  description: \"\"\n  type: free\n- \n  amenity_id: \"12\"\n  amenity: Pets Allowed\n  description: \"\"\n  type: free",
+            "gallery": "- >\n  20170202_hackerscher_markt_common_areas-10.jpg\n- >\n  20170202_hackerscher_markt_conference_rooms-5.jpg",
+            "free_trial_day": "0",
+            "slug": "wework-hackescher-markt",
+            "id": 7,
+            "location":
+            {
+                "lat": 52.5247386,
+                "lng": 13.4026524
+            }
+        },
+        {
+            "title": "WeWork Potsdamer Platz",
+            "type": "3",
+            "google_place_id": "ChIJ_eyJEMxRqEcRW16JVzGwFlE",
+            "address": "Stresemannstraße 123, 10963 Berlin",
+            "description": "WeWork Potsdamer Platz lets you centre your business in the centre of Berlin.",
+            "tags": "",
+            "website": "https://www.wework.com/buildings/stresemannstrasse-123--berlin",
+            "book_url": "https://www.wework.com/buildings/stresemannstrasse-123--berlin",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/wework-potsdamer-platz/20160216_fine_arts_la_-_members-35-600x400.jpg",
+                "thumb": "api/berlin/thumbs/wework-potsdamer-platz/20160216_fine_arts_la_-_members-35-180x120.jpg"
+            },
+            "gallery": "",
+            "free_trial_day": "0",
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "",
+                    "price_month": "350"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "370"
+                }
+            ],
+            "amenities": "",
+            "slug": "wework-potsdamer-platz",
+            "id": 12,
+            "location":
+            {
+                "lat": 52.5073534,
+                "lng": 13.3782069
+            }
+        },
+        {
+            "title": "Unicorn Berlin",
+            "type": "3",
+            "google_place_id": "ChIJeXBnkfZRqEcRXV8luJ_ugws",
+            "address": "Brunnenstraße 64, 13355 Berlin",
+            "description": "Unicorn.Berlin Brunnenviertel provides high-end-coworking, meeting rooms and an event space.",
+            "tags": "",
+            "website": "https://unicorn.berlin/locations/brunnenstrasse-64-brunnenviertel/",
+            "book_url": "",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/unicorn-berlin/unicorn_2_lounge_totale-1-600x450.jpg",
+                "thumb": "api/berlin/thumbs/unicorn-berlin/unicorn_2_lounge_totale-1-180x135.jpg"
+            },
+            "gallery": "",
+            "free_trial_day": "0",
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "16",
+                    "price_month": ""
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "149"
+                }
+            ],
+            "amenities": "",
+            "slug": "unicorn-berlin",
+            "id": 14,
+            "location":
+            {
+                "lat": 52.5407194,
+                "lng": 13.3945852
+            }
+        },
+        {
+            "title": "Rent 24 Mitte",
+            "type": "3",
+            "google_place_id": "ChIJbQANnNlRqEcRXQws7ocDg4s",
+            "address": "Oberwallstraße 6, 10117 Berlin",
+            "description": "Located in the heart of Berlin, they have created a beautifully designed coworking and office space on more than 7.200 m2 and on 6 floors.",
+            "tags": "",
+            "website": "https://www.rent24.com/en/",
+            "book_url": "",
+            "image":
+            {
+                "medium": "api/berlin/thumbs/rent-24-mitte/rent24-600x315.jpg",
+                "thumb": "api/berlin/thumbs/rent-24-mitte/rent24-180x95.jpg"
+            },
+            "gallery": "",
+            "free_trial_day": "0",
+            "workspaces":
+            [
+                {
+                    "ws_type_id": "1",
+                    "type": "Hot Desk",
+                    "price_day": "",
+                    "price_month": "50"
+                },
+                {
+                    "ws_type_id": "3",
+                    "type": "Flex Desk",
+                    "price_day": "",
+                    "price_month": "199"
+                },
+                {
+                    "ws_type_id": "2",
+                    "type": "Dedicated Desk",
+                    "price_day": "",
+                    "price_month": "299"
+                }
+            ],
+            "amenities": "",
+            "slug": "rent-24-mitte",
+            "id": 15,
+            "location":
+            {
+                "lat": 52.503695,
+                "lng": 13.3787386
+            }
+        }
+    ]
+}

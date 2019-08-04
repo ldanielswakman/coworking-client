@@ -1,0 +1,51 @@
+{
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "response": {
+    "title": "We're All In",
+    "type": "3",
+    "google_place_id": "ChIJj5rPWu9RqEcRA6gE6RndLlI",
+    "address": "Torstraße 177, 10115 Berlin, Germany",
+    "description": "A coworking space for creative professionals\r\nin the vibrant heart of Berlin Mitte.",
+    "tags": "",
+    "website": "http://waai.de/",
+    "book_url": "",
+    "image": {
+      "medium": "api/berlin/thumbs/we-re-all-in/17310189_274651546308998_6244258056101048139_o-600x400.jpg",
+      "thumb": "api/berlin/thumbs/we-re-all-in/17310189_274651546308998_6244258056101048139_o-180x120.jpg"
+    },
+    "gallery": "",
+    "workspaces": [
+      {
+        "ws_type_id": "1",
+        "type": "Hot Desk",
+        "price_day": "40",
+        "price_month": "300"
+      },
+      {
+        "ws_type_id": "2",
+        "type": "Dedicated Desk",
+        "price_day": "",
+        "price_month": "350"
+      },
+      {
+        "ws_type_id": "5",
+        "type": "Private Office",
+        "price_day": "",
+        "price_month": "900"
+      }
+    ],
+    "amenities": [
+      
+    ],
+    "free_trial_day": "0",
+    "slug": "we-re-all-in",
+    "id": 9,
+    "location": {
+      "lat": 52.52879370000000136542439577169716358184814453125,
+      "lng": 13.39207210000000003446984919719398021697998046875
+    }
+  }
+}
