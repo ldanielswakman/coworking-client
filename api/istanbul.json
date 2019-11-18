@@ -17,8 +17,8 @@
             "type": "3",
             "image":
             {
-                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/impacthub-istanbul/impacthubist-600x400.jpg",
-                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/impacthub-istanbul/impacthubist-180x120.jpg"
+                "medium": "api/istanbul/thumbs/impacthub-istanbul/impacthubist-600x400.jpg",
+                "thumb": "api/istanbul/thumbs/impacthub-istanbul/impacthubist-180x120.jpg"
             },
             "workspaces":
             [
@@ -51,8 +51,8 @@
             "website": "http://www.habita.com.tr/en",
             "image":
             {
-                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/habita/habita-600x300.jpg",
-                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/habita/habita-180x90.jpg"
+                "medium": "api/istanbul/thumbs/habita/habita-600x300.jpg",
+                "thumb": "api/istanbul/thumbs/habita/habita-180x90.jpg"
             },
             "workspaces":
             [
@@ -95,8 +95,8 @@
             "website": "https://atolye.io/en/",
             "image":
             {
-                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/atolye-istanbul/atolye-large-600x352.jpg",
-                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/atolye-istanbul/atolye-large-180x106.jpg"
+                "medium": "api/istanbul/thumbs/atolye-istanbul/atolye-large-600x352.jpg",
+                "thumb": "api/istanbul/thumbs/atolye-istanbul/atolye-large-180x106.jpg"
             },
             "workspaces":
             [
@@ -139,8 +139,8 @@
             "website": "https://www.kolektifhouse.co/en/sishane-office/",
             "image":
             {
-                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/kolektif-house-sishane/kolektif-house-600x338.png",
-                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/kolektif-house-sishane/kolektif-house-180x101.png"
+                "medium": "api/istanbul/thumbs/kolektif-house-sishane/kolektif-house-600x338.png",
+                "thumb": "api/istanbul/thumbs/kolektif-house-sishane/kolektif-house-180x101.png"
             },
             "workspaces":
             [
@@ -183,8 +183,8 @@
             "website": "http://www.workhaus.com.tr/",
             "image":
             {
-                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/workhaus/workhaus-600x429.png",
-                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/workhaus/workhaus-180x129.png"
+                "medium": "api/istanbul/thumbs/workhaus/workhaus-600x429.png",
+                "thumb": "api/istanbul/thumbs/workhaus/workhaus-180x129.png"
             },
             "workspaces":
             [
@@ -228,8 +228,8 @@
             "website": "",
             "image":
             {
-                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/workinton/workinton-levent-600x277.jpg",
-                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/workinton/workinton-levent-180x83.jpg"
+                "medium": "api/istanbul/thumbs/workinton/workinton-levent-600x277.jpg",
+                "thumb": "api/istanbul/thumbs/workinton/workinton-levent-180x83.jpg"
             },
             "workspaces":
             [
@@ -273,8 +273,8 @@
             "website": "https://www.kolektifhouse.co/en/levent-office/",
             "image":
             {
-                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/kolektif-house-levent/levent-4-600x400.jpg",
-                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/kolektif-house-levent/levent-4-180x120.jpg"
+                "medium": "api/istanbul/thumbs/kolektif-house-levent/levent-4-600x400.jpg",
+                "thumb": "api/istanbul/thumbs/kolektif-house-levent/levent-4-180x120.jpg"
             },
             "workspaces":
             [
@@ -317,8 +317,8 @@
             "book_url": "",
             "image":
             {
-                "medium": "http://localhost/coworking-api/api/thumbs/istanbul/kamara/anasayfa-3-600x417.jpg",
-                "thumb": "http://localhost/coworking-api/api/thumbs/istanbul/kamara/anasayfa-3-180x125.jpg"
+                "medium": "api/istanbul/thumbs/kamara/anasayfa-3-600x417.jpg",
+                "thumb": "api/istanbul/thumbs/kamara/anasayfa-3-180x125.jpg"
             },
             "gallery": "- anasayfa-3.jpg\r\n- anasayfa-1.jpg\r\n- anasayfa-5.jpg\r\n- anasayfa-2.jpg\r\n- anasayfa-4.jpg",
             "free_trial_day": "1",
